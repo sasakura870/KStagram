@@ -1,0 +1,32 @@
+.wrapper
+  = render "header"
+  -# .tweetshowhed
+  -#   =current_user.name
+  .tweetshows
+    .tweetshow
+      .tweetuser
+        =current_user.name
+        -# =@tweet.title
+        -# .tweetDate
+        -#   = @tweet.updated_at.strftime("%Y-%m-%d %H:%M")
+        .editshow
+          -# %span
+            %ul
+              %li
+                = link_to edit_tweet_path do
+                  %i.fas.fa-ellipsis-h
+              %li
+                = link_to tweet_path, method: :delete do
+                  %i.fas.fa-ellipsis-h
+      .tweetImage
+        = image_tag(@tweet.image_url)
+      .tweetAuthor
+      .tweetText
+        = simple_format @tweet.text
+      .tweetDate
+        = @tweet.updated_at.strftime("%Y-%m-%d %H:%M")
+      
+
+
+
+

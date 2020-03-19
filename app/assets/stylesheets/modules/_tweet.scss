@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+.wrapper{
+  width: 100%;
+  .header_bar{
+    height: 70px;
+    background-color:rgba(var(--cdc,255,255,255),1);
+    position: fixed;
+    border-bottom: 1px solid gray;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    // background-image: url(back.jpg);
+    .header_main{
+      text-decoration: none;
+      margin-left: 100px;
+      line-height: 65px;
+      font-size: 50px;
+      font-family: 'Homemade Apple', cursive;
+      color: #45494Be7;
+      font-style:oblique;
+    }
+    .header_name{
+      line-height: 65px;
+      font-size: 50px;
+      margin-left: 400px;
+    }
+    .user_info{
+      display: flex;
+      float: right;
+      padding-right: 30px;
+      padding-top: 15px;
+      font-size: 30px;
+    }
+      .search{
+        margin-right: 200px;
+        #form1{
+          margin-right: 10px;
+        }
+      }
+      li{
+       margin-left: 20px;
+      }
+      a{
+        color:#6A6E71;
+      }
+  }
+  // .search-form{
+  //   margin: 0 auto;
+  //   line-height: 50px;
+  // }
+  
+      .mainindex{
+        min-height :100vh;
+        width: 100%;
+        background-color: rgba(var(--b3f,250,250,250),1);
+        display: flex;
+        flex-wrap:wrap; 
+        direction: ltr;
+        // flex-direction: column
+      }
+    .content{
+      margin-left: 10px;
+      margin-right: 10px;
+      background-color: #fff;
+      width: 379px;
+      height: 506px;
+      background-size: 100% auto;
+      zoom: 0.5;
+      position: relative;
+      margin-top: 150px;
+      
+      a{
+        text-decoration: none;
+        top: 0;
+      bottom: 0;
+      left: 0px;
+      right: 0;
+      border-radius: 3px;
+        position: absolute;
+        opacity: 0.1;
+        transition:all 0.3s;
+      }
+    }
+    .mainname{
+      margin-top: 506px;
+      text-align: center;
+      line-height: 900px;
+      bottom: 0;
+      // background-color: white;
+      .mainnameleft{
+        width: 50%;
+        line-height: 100px;
+        float: left;
+        text-align: left;
+        font-style:italic;
+        background-color: white;
+      }
+      .mainnameright{
+        // margin-top: 506px;
+        line-height: 100px;
+        float: right;
+        width: 50%;
+        bottom: 0;
+        opacity: 0.8;
+        background-color: white;
+        
+      }
+    }
+}

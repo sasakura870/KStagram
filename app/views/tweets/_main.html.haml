@@ -1,0 +1,14 @@
+.main
+  .mainindex
+    - @tweets.each do |tweet|
+      .content{:style => "background-image: url(#{tweet.image});"}
+        -# = link_to("/tweets/#{tweet.id}", method: :get) do
+        -#   =tweet.title
+        = link_to asset_url("/tweets/#{tweet.id}", method: :get) do
+          = image_tag "/tweets/#{tweet.id}", method: :get
+
+        .mainname
+          .mainnameleft
+            =tweet.user.name
+          .mainnameright
+            = tweet.updated_at.strftime("%Y-%m-%d %H:%M")
