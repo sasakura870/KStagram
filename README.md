@@ -26,42 +26,44 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
+|name|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
-|username|string|null: false|
+|profile|text||
+|image|text||
+|sex|string||
+|age|integer||
+|tall|integer||
+
 ### Association
 - has_many :twees
 - has_many :comments
+- has_many :likes
 
 ## tweetsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|title|text|null: false|
-|text|text||
-|image|String||
+|title|string|null: false|
+|text|text|null: false|
+|sex|String|null: false|
+|tall|integer|null: false|
+|image|text|null: false|
+|temp|integer|null: false|
+|typestyle|String|null: false|
 |user_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
 - has_many :comments
-- has_many :tweet_genres
-- has_many  :genres,  through:  :tweets_genres
+- has_many :likes
 
-## genresテーブル
+## likesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
-### Association
-- has_many :tweets_genres
-- has_many :tweets,  through:  :tweets_genres
-
-## tweets_genresテーブル
-|Column|Type|Options|
-|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
 |tweet_id|integer|null: false, foreign_key: true|
-|genre_id|integer|null: false, foreign_key: true|
 ### Association
-- belongs_to :tweet
-- belongs_to :genre
+- belong_to :tweet
+- belong_to :user,  
 
 ## commentsテーブル
 |Column|Type|Options|
