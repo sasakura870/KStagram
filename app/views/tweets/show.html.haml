@@ -5,28 +5,81 @@
   .tweetshows
     .tweetshow
       .tweetuser
-        =current_user.name
-        -# =@tweet.title
-        -# .tweetDate
-        -#   = @tweet.updated_at.strftime("%Y-%m-%d %H:%M")
-        .editshow
-          %span
-            %ul
-              %li
-                = link_to edit_tweet_path do
-                  %i.fas.fa-ellipsis-h
-              %li
-                = link_to tweet_path, method: :delete do
-                  %i.fas.fa-home
+        = link_to asset_url("/users/#{@tweet.user_id}") do
+          =@tweet.user.name
+        - if user_signed_in?&& current_user.id == @tweet.user_id
+          .editshow
+            %span
+              %ul
+                %li
+                  = link_to edit_tweet_path do
+                    %i.fas.fa-ellipsis-h
+                %li
+                  = link_to tweet_path, method: :delete do
+                    %i.fas.fa-trash-alt
+        - else
+          .editshow
+            %span
+              %ul
+                %li
+                  -# = link_to edit_tweet_path do
+                  %i.ooo.fas.fa-ellipsis-h
+                %li
+                  -# = link_to tweet_path, method: :delete do
+                  %i.ooo.fas.fa-trash-alt
+
       .tweetImage
         = image_tag(@tweet.image_url)
       .tweetAuthor
       .tweetText
         = simple_format @tweet.text
-      .tweetDate
+      .tweetsex
+        = @tweet.sex
+        身長:
+        = @tweet.tall 
+        cm
+      .tweettemp
+        気温:
+        =@tweet.temp
+        ℃  
+      .tweettypestyle
+        体質:
+        =@tweet.typestyle
+      .tweettext
         = @tweet.updated_at.strftime("%Y-%m-%d %H:%M")
       
-
+       
+        
+      %br
+        %h3.liketweet
+          いいね: #{@tweet.likes.count}
+          - if current_user.already_liked?(@tweet)
+            = link_to  tweet_like_path(@tweet) , method: :delete do
+              %i.favo.far.fa-heart
+          - else
+            = button_to tweet_likes_path(@tweet) do
+              %i.favo.far.fa-heart
+            
+        -# %h2.liketweetuser いいねしたユーザー
+        - @tweet.liked_users.each do |user|
+          %li.tweetuserlikename= user.name
+        が「いいね！」しました
+        .commentscoment
+          %h4 
+          - if @comments
+            - @comments.each do |comment|
+              %p
+                %strong
+                  = link_to comment.user.name, "/users/#{comment.user_id}" 
+                = comment.text
+                  
+        .commentsusers
+          - if current_user
+            .formcoment
+            = form_with(model: [@tweet, @comment], local: true,id: "new_comment") do |form|
+              = form.text_area :text, placeholder: "  コメントを追加...", rows: "2", class: "textbox"
+              = form.submit "投稿する", class: "comments_sent"
+          
 
 
 

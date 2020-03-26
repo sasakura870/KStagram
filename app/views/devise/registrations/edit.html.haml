@@ -1,44 +1,89 @@
-%h2
-  Edit #{resource_name.to_s.humanize}
-= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
-  = render "devise/shared/error_messages", resource: resource
-  .field
-    = f.label :name
-    %br/
-    = f.text_field :name, autofocus: true
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true, autocomplete: "email"
-  - if devise_mapping.confirmable? && resource.pending_reconfirmation?
-    %div
-      Currently waiting confirmation for: #{resource.unconfirmed_email}
-  -# .field
-  -#   = f.label :profile
-  -#   %br/
-  -#   = f.text_area :profile, autofocus: true
-  .field
-    = f.label :password
-    %i (leave blank if you don't want to change it)
-    %br/
-    = f.password_field :password, autocomplete: "new-password"
-    - if @minimum_password_length
-      %br/
-      %em
-        = @minimum_password_length
-        characters minimum
-  .field
-    = f.label :password_confirmation
-    %br/
-    = f.password_field :password_confirmation, autocomplete: "new-password"
-  .field
-    = f.label :current_password
-    %i (we need your current password to confirm your changes)
-    %br/
-    = f.password_field :current_password, autocomplete: "current-password"
-  .actions
-    = f.submit "Update"
-%h3 Cancel my account
-%p
-  Unhappy? #{button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
-= link_to "Back", :back
+.wrapper
+  =render "header"
+  .gbl_main
+    .gbl_title
+      .gbl_title_container
+        .title_container 
+          %h1.tit.icon_font
+            %span.ico
+            %i.fab.fa-instagram
+            アカウント編集
+  .useriine
+    .useriineiines
+      .userprofss
+        .userprofiles
+          -# .user_subs
+          -#   .usersubimages
+          -#     %p.imageuserss
+          -#       = image_tag(@user.image_url)
+            -# = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+            -#   = render "devise/shared/error_messages", resource: resource
+            -#   .field
+            -#     = f.file_field :image
+          .user_mainss
+            .intros
+              %h2.sksksk
+                アカウント編集
+                -# Edit #{resource_name.to_s.humanize}
+              = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+                = render "devise/shared/error_messages", resource: resource
+                .field
+                  = f.label :ユーザ名
+                  %br/
+                  = f.text_field :name, autofocus: true
+                .field
+                  = f.label :メールアドレス
+                  %br/
+                  = f.email_field :email, autofocus: true, autocomplete: "email"
+                - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+                  %div
+                    Currently waiting confirmation for: #{resource.unconfirmed_email}
+                .sectionimagess
+                  .subsubsubs
+                    .subsubimageboxs
+                      %span.icoicos
+                      %span.icoimages
+                        NO IMAGE
+                    .mainmainimages
+                      %p.mainajaxmains
+                        = f.file_field :image, class: "image_form"
+                        %span.textextxs
+                          写真アップロード
+                  .fffssss
+                    .field
+                      = f.text_field :tall, placeholder: "身長(cm)"
+                    .field
+                      = f.select :sex, ['MEN', 'WOMEN']
+                    .field
+                      = f.text_field :age, placeholder: "年齢(歳)"
+                  .fieldss
+                    = f.label :紹介文
+                    %br/
+                    = f.text_area :profile, autofocus: true
+                  .fielsssa
+                    .field
+                      = f.label :パスワード
+                      -# %i (leave blank if you don't want to change it)
+                      %br/
+                      = f.password_field :password, autocomplete: "new-password"
+                      -# - if @minimum_password_length
+                      -#   %br/
+                      -#   %em
+                      -#     = @minimum_password_length
+                      -#     文字以上
+                    .field
+                      = f.label :パスワード確認
+                      %br/
+                      = f.password_field :password_confirmation, autocomplete: "new-password"
+                  .fieldasaf
+                    = f.label :現在のパスワード
+                    -# %i (we need your current password to confirm your changes)
+                    %br/
+                    = f.password_field :current_password, autocomplete: "current-password"
+                  .lslslsl  
+                    .actionss
+                      = f.submit "更新"
+                  -# %h3 アカウント削除
+                -# %p
+                -#   #{button_to "アカウント削除", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
+                = link_to "戻る", :back

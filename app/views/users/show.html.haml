@@ -1,8 +1,52 @@
-.contents.row
-  %p
-    = @name
-    さんの投稿一覧
-  - @tweets.each do |tweet|
-    .content_post{:style => "background-image: url(#{tweet.image});"}
-      = simple_format(tweet.text)
-      -# %span.name= tweet.name
+.wrapper
+  = render "header"
+  .useriine
+    .useriineiine
+      .userprofs
+        .userprofile 
+          .user_sub
+            .usersubimage
+              %p.imageusers
+                = image_tag(@user.image_url)
+          .user_mains
+            .intro
+              .ssssssa
+                %h1.introuser
+                =@user.name
+              .metas
+                %ul.metalist
+                  %li.aaa
+                  =@user.tall
+                  cm
+                  %li.bbb
+                  =@user.sex
+                  %li.ccc
+                  =@user.age
+                  歳
+              %ul.metalistsss
+                - if current_user == @user
+                  = link_to edit_user_registration_path do
+                    %i.lslsl.fa.fa-edit
+                = link_to users_path do
+                  %i.lslsls.fa.fa-users
+              .metaprofile
+                .missiisis
+                  紹介文
+                %p.proffff
+                  =@user.profile
+                %br
+              %h3.llllls いいねしている投稿
+              %table
+                %tr
+                  %th ユーザ名
+                  %th タイトル
+                - @user.liked_tweets.each do |tweet|
+                  %tr
+                    %td 
+                      %a{:href => "/users/#{tweet.user.id}"}= tweet.user.name
+                    %td
+                      %a{:href => "/tweets/#{tweet.id}"}= tweet.title
+  
+          
+
+  

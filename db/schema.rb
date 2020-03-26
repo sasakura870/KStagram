@@ -10,11 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_14_125026) do
+ActiveRecord::Schema.define(version: 2020_03_20_050620) do
+
+  create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "tweet_id"
+    t.text "text"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "likes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "tweet_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "tweets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "text", null: false
+    t.string "title", null: false
+    t.string "sex", null: false
+    t.integer "tall", null: false
     t.text "image", null: false
+    t.integer "temp", null: false
+    t.string "typestyle", null: false
     t.integer "user_id"
     t.integer "genre_id"
     t.datetime "created_at", null: false
@@ -24,6 +44,10 @@ ActiveRecord::Schema.define(version: 2020_03_14_125026) do
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.text "profile"
+    t.text "image"
+    t.string "sex"
+    t.integer "age"
+    t.integer "tall"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -31,6 +55,8 @@ ActiveRecord::Schema.define(version: 2020_03_14_125026) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["name"], name: "index_users_on_name", unique: true
   end
 
 end

@@ -1,0 +1,188 @@
+.useriineiines{
+  padding: 18px 0 30px 0;
+  background: #fff;
+    min-height: 210px;
+    background-color: rgba(var(--b3f, 250, 250, 250), 1);
+    position: relative;
+}
+.userprofss{
+  width: 1050px;
+    margin: 0 auto 0 auto;
+    position: relative;
+    z-index: 50;
+}
+.userprofiles{
+  margin: 22px 0 0 0;
+  border: 1px #aaa dashed;
+  background-color: white;
+}
+.user_subs{
+  width: 200px;
+  float: left;
+  margin: 70px 44px 0 0;
+}
+.usersubimages{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  zoom: 0.7;
+}
+.imageuserss{
+  font-size: 0;
+  line-height: 1;
+  letter-spacing: 0;
+  margin-top: 10px;
+  height: 200px;
+    width: 200px;
+}
+#user_image{
+  margin-top: 120px;
+}
+.user_mainss{
+  width: 750px;
+  margin: 0 auto;
+  // float: right;
+  padding: 20px 0 0 20px;
+}
+.intros{
+  display: block;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.sksksk{
+  font-size: 40px;
+  text-align: center;
+  // margin-right: 160px;
+}
+#edit_user{
+text-align: center;
+}
+#user_name{
+  // height: 50px;
+  // margin-bottom: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#user_email{
+  
+  // height: 50px;
+  margin-bottom: 30px;
+}
+.sectionimagess{
+  
+  
+  .subsubsubs{
+   
+  // height: 310px;
+  margin-bottom: 20px;
+  display: flex;
+  }
+  .subsubimageboxs{
+    position: relative;
+  border: 1px #aaa dashed;
+  background: #fff;
+  width: 276px;
+    height: 368px;
+    float: left;
+  .icoicos{
+    margin-top: 158px;
+  }
+  .icoimages{
+    margin: 12px 0 0 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ccc;
+  }
+ }
+ .mainmainimages{
+  padding: 154px 0 0 0;
+  width: 276px;
+  height: 368px;
+  position: relative;
+  float: right;
+
+.image_form{
+  font-size: 13px;
+padding: 8px 8px 8px 8px;
+}
+
+}
+.fffssss{
+  display: flex;
+  // margin-top: 300px;
+  margin-bottom: 20px;
+  // text-align: center;
+  .field{
+  margin-left: 55px;
+  margin-bottom: 20px;
+  }
+}
+  select {
+
+    /* styling */
+    background-color: white;
+    // border: thin solid blue;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.2em 3.0em 0.2em 1em;
+    margin: 0;      
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  
+  /* arrows */
+  
+  select#user_sex {
+    background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  }
+
+.fieldss{
+  width: 100%;
+  label{
+    font-size: 25px;
+  }
+  #user_profile{
+    width: 80%;
+    height: 100px;
+  }
+}
+.fielsssa{
+  // display: flex;
+  margin-top: 20px;
+  // margin-left: 50px;
+  #user_password{
+    margin-bottom: 30px;
+  }
+  // label{
+  //   // margin-left: 80px;
+  // }
+  // #user_password_confirmation{
+  //   // margin-left: 80px;
+  // }
+}
+.fieldasaf{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.actionss{
+  margin-bottom: 20px;
+}
+}

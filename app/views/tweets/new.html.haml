@@ -1,14 +1,61 @@
 .wrapper
-  = render "header"
-  .contents.row
-  .container
-    = form_for @tweet do |form| 
-      %h3.btn
-        投稿する
-      -# = form.text_field :title, placeholder: "タイトル"
-      = form.file_field :image, placeholder: "Image Url"
+  = render "header" 
+  .gbl_main
+    .gbl_title
+      .gbl_title_container
+        .title_container 
+          %h1.tit.icon_font
+            %span.ico
+            %i.fab.fa-instagram
+            %i.stst コーディネート投稿
+  .glbdaa  
+    .gbl_body
+      .contentaaa 
+        %h3.btnaa
+          ファッション画像
+        = form_for @tweet do |form| 
+          = form.text_field :title, placeholder: "タイトル"
+          .sectionimages
+            .subsubsub
+              .subsubimagebox
+                %span.icoico
+                %span.icoimage
+                  NO IMAGE
+            .mainmainimage
+              %p.mainajaxmain
+                = form.file_field :image, class: "image_form"
+                %span.textextx
+                  写真アップロード
+          = form.text_field :temp, placeholder: "気温(℃)"
+          = form.select :typestyle, ['冷え性', '普通', '暑がり']
+          = form.select :sex, ['メンズ', 'レディース', 'ユニセックス','キッズ']
+          = form.text_field :tall, placeholder: "身長(cm)"
+          = form.text_area :text, placeholder: "text", rows: "10"
+          = form.submit "投稿する" , { :class => 'submit-btn' }
+          -# = form.label :image, class: 'input_box_image' do
+    -#     -#   -# = fa_icon 'image', class: 'icon'
+    -#     = form.text_area :text, placeholder: "text", rows: "10"
+    -#     = form.submit "投稿する" , { :class => 'submit-btn' }
       
-      -# = form.label :image, class: 'input_box_image' do
-      -#   -# = fa_icon 'image', class: 'icon'
-      = form.text_area :text, placeholder: "text", rows: "10"
-      = form.submit "SEND" 
+        
+    -#       .contents.row
+    -# .container
+    -#   = form_for @tweet do |form| 
+    -#     %h3.btn
+    -#       投稿する
+    -#     = form.text_field :title, placeholder: "タイトル"
+    -#     = form.file_field :image, class: "image_form"
+    -#     = form.select :sex, ['メンズ', 'レディース', 'ユニセックス','キッズ']
+    -#     = form.text_field :tall, placeholder: "身長(cm)"
+        
+    -#     -# .aaaa
+    -#     -#   %select
+    -#     -#     %option{:sex => "0"} 男性
+    -#     -#     %option{:sex => "1"} 女性
+    -#     -#     %option{:sex => "2"} ユニセックス
+    -#     -#     %option{:sex => "3"} キッズ
+
+    -#     -# = form.label :image, class: 'input_box_image' do
+    -#     -#   -# = fa_icon 'image', class: 'icon'
+    -#     = form.text_area :text, placeholder: "text", rows: "10"
+    -#     = form.submit "投稿する" , { :class => 'submit-btn' }
