@@ -9,13 +9,8 @@ class TweetsController < ApplicationController
   end
   def create
     
-    # @tweet = Tweet.new(tweet_params)
-    #     if @tweet.save
-    #         render 'index'
-    #     else
-    #         render 'new'
-    #     end
-    Tweet.create(tweet_params)
+    @tweet = Tweet.create(tweet_params)
+    
   end
   def destroy
     tweet = Tweet.find(params[:id])
@@ -38,7 +33,6 @@ class TweetsController < ApplicationController
   
   def search
     @tweets = Tweet.search(params[:keyword]).order(created_at: :desc)
-    
   end
 
 

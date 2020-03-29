@@ -16,12 +16,12 @@ class User < ApplicationRecord
   def already_liked?(tweet)
     self.likes.exists?(tweet_id: tweet.id)
   end
-  # def self.search(search)
-  #   if search
-  #     User.where('name LIKE(?) or profile LIKE(?)  or age LIKE(?)  or tall LIKE(?)',"%#{search}%", "%#{search}%", "%#{search}%", "%#{search}%")
-  #   else
-  #     User.all
-  #   end
-  # end
+  def self.search(search)
+    if search
+      User.where('name LIKE(?) or profile LIKE(?)  or age LIKE(?)  or tall LIKE(?) or sex LIKE(?) ', "%#{search}%", "%#{search}%", "%#{search}%", "%#{search}%","%#{search}%")
+    else
+      User.all
+    end
+  end
 end
 

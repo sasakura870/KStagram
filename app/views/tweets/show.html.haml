@@ -31,6 +31,7 @@
       .tweetImage
         = image_tag(@tweet.image_url)
       .tweetAuthor
+      .kodeshousai コーデ詳細
       .tweetText
         = simple_format @tweet.text
       .tweetsex
@@ -62,8 +63,8 @@
             
         -# %h2.liketweetuser いいねしたユーザー
         - @tweet.liked_users.each do |user|
-          %li.tweetuserlikename= user.name
-        が「いいね！」しました
+          %li.tweetuserlikename= user.name 
+        .ffsfas1 が「いいね！」しました
         .commentscoment
           %h4 
           - if @comments

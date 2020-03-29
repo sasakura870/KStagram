@@ -1,7 +1,7 @@
 class Tweet < ApplicationRecord
   # belongs_to :user
   # has_many :tweets
-  validates :image,:text,:sex,:tall, presence: true 
+  validates :image,:text,:sex,:tall,:title,:temp, presence: true 
   mount_uploader :image, ImageUploader
   belongs_to :user
   has_many :comments

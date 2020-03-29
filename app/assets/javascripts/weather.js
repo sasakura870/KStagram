@@ -1,3 +1,4 @@
+$(document).on('turbolinks:load', function() {
 $(function() {
   var API_KEY = '039e1ced968cb2684b75144bc7665be7'
   var city = 'Tokyo';
@@ -11,7 +12,7 @@ $(function() {
     var insertHTML = "";
     var cityName = '<h2>' + data.city.name + '</h2>';
     $('#city-name').html(cityName);
-    for (var i = 0; i <= 8; i = i + 2) {
+    for (var i = 0; i <= 12; i = i + 1) {
       insertHTML += buildHTML(data, i);
     }
     $('#weather').html(insertHTML);
@@ -36,3 +37,4 @@ function buildHTML(data, i) {
   '</div>';
   return html
 }
+});

@@ -15,10 +15,10 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @user.update(user_params)
   end
-  # def search
-  #   @users = User.search(params[:keyword])
+  def search
+    @user = User.search(params[:keyword])
     
-  # end
+  end
   private
   def user_params
     params.require(:user).permit(:name,:image,:profile,:sex,:age,:tall).merge(user_id: current_user.id)

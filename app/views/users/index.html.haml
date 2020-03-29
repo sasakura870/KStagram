@@ -1,4 +1,4 @@
-.wrapper
+.wrappers
   = render "header"
   .gbl_main
     .gbl_title
@@ -7,17 +7,22 @@
           %h1.tit.icon_font
             %span.ico
             %i.fab.fa-instagram
-            %i.stst KStgramユーザー一覧
+              %i.stst KStgramユーザー一覧
+              .kskskska
+                = form_with(url: search_users_path, local: true, method: :get, class: "search-formss") do |form|
+                  = form.text_field :keyword, placeholder: "ユーザー検索", class: "search-inputss"
+                  %button.search-btnss{:type => "submit"}
+                    %i.fa.fa-address-book
   .gbl_bodyssss
     .contentaasas
-      %h1.useriinenameaa 登録ユーザー一覧
+      -# %h1.useriinenameaa 登録ユーザー一覧
       %table
-        %tr
+        %tr.kusowaro
           %th ユーザ名
           %th 性別
           %th 登録日
         - @users.each do |user|
-          %tr
+          %tr.ssala
             %td 
               %a{:href => "/users/#{user.id}"}= user.name
             %td 
