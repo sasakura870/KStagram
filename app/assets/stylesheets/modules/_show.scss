@@ -24,6 +24,8 @@
       a{
         color: gray;
         margin-right: 20px;
+        text-decoration: none;
+        font-size: 20px;
       }
     }
     .editshow{
@@ -31,20 +33,119 @@
       color: #45494Be7;
       // margin-left: 700px;
     }
-    .tweetDate{
-      text-align: start;
-      opacity: 0.8;
-      margin-right: 300px;
-    }
     .tweetImage img{
       zoom: 0.5;
       text-align: center;
       height: 100%;
-      width: 100%;
-      
+      width: 100%;  
+    }
+    .kodeshousai{
+      margin:10px;
+      font-size: 30px;
+      color:orange;
+      text-align: center;
     }
     .tweetText{
       text-align: left;
+      margin:10px;
+    }
+    .tweetsex{
+      margin-left: 10px;
+      opacity: 0.8;
+      color:red;
+      font-size:20px;
+    }
+    .tweettemp{
+      margin-left: 10px;
+      color:#73a9ff;
+      font-size:20px;
+    }
+    .tweettypestyle{
+      margin-left: 10px;
+      color:#00FF00;
+      font-size:20px;
+    }
+    .tweettext{
+      margin: 10px;
+      opacity: 0.8;
+    }
+    .liketweet{
+      margin: 10px;
+      display: flex;
+    }
+    .button_to{
+      border: 0;
+    }
+    .favo{
+      margin-left:10px;
+      color: black;
+      font-size: 20px;
+      
+    }
+    .liketweetuser{
+      margin: 10px;
+    }
+    .tweetuserlikename{
+      list-style: none;
+      margin-left: 10px;
+      margin-right: 1px; 
+      // margin-bottom: 5px;
+      display: inline; 
+    }
+    .ffsfas1{
+      margin-left: 10px;
+    }
+    strong{
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      a{
+        text-decoration: none;
+        color: #000;
+      }
+      
+    }
+    .commentscoment{
+      margin-top: 10px;
+    }
+    .commentsusers{
+      margin-top: 10px;
+      
+        
+        .formcoment{
+        // display: flex;
+        height: 100%;
+        width: 100%;
+        }
+        #new_comment{
+          display: flex;
+        }
+        #comment_text{
+          width: 100%;
+          border: 0;
+      }
+    }
+
+      .comments_sent{
+        margin: 0 auto;
+        font-size: 15px;
+        color: #67c5ff;
+        border: solid 2px #67c5ff;
+        border-radius: 3px;
+        transition: .4s;
+        padding: 15px;
+        
+      }
+      .comments_sent:hover{
+        background: #67c5ff;
+        color: white;
+      }
     }
   } 
+  
+  .ooo{
+    color: gray;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
   }

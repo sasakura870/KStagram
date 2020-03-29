@@ -1,0 +1,30 @@
+.header_bar
+  %h1.header_1
+  %a{ href: '/',class: 'header_main' }
+    KStagram
+  %ul.user_info
+    %h3.search
+      -# %form#form1{:action => "自分のサイトURL"}
+      -#   %input#sbox{:name => "s", :placeholder => "検索", :type => "search"}/
+      -#   %input#sbtn{:type => "submit", :value => "検索"}/
+      = form_with(url: search_tweets_path, local: true, method: :get, class: "search-form") do |form|
+        -# %li.fas.fa-search
+        = form.text_field :keyword, placeholder: " 検索...", class: "search-input"
+        %button.search-btn{:type => "submit"}
+          %i.fas.fa-search
+       
+      
+
+    %li.user_info_home
+    = link_to root_path do
+      %i.fas.fa-home
+    %li.user_info_insta
+    = link_to new_tweet_path do
+      %i.fab.fa-instagram
+    %li.user_info_heart
+    = link_to asset_url("/users/#{current_user.id}") do
+      %i.fas.fa-heart
+    %li.user_info_insta
+    = link_to destroy_user_session_path, method: :delete do
+      %i.fa.fa-user
+    
