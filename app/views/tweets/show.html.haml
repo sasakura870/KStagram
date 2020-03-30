@@ -71,8 +71,11 @@
             - @comments.each do |comment|
               %p
                 %strong
-                  = link_to comment.user.name, "/users/#{comment.user_id}" 
+                  = link_to comment.user.name, "/users/#{comment.user_id}"
+                  ：
                 = comment.text
+
+                  
                   
         .commentsusers
           - if current_user
