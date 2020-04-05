@@ -29,4 +29,4 @@
               =user.sex
             %td 
               = user.created_at.strftime("%Y-%m-%d %H:%M")
-      
+  = paginate(@users)

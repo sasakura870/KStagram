@@ -1,7 +1,7 @@
 class TweetsController < ApplicationController
   
   def index
-    @tweets = Tweet.all.order(created_at: :desc)
+    @tweets = Tweet.all.order(created_at: :desc).page(params[:page]).per(25)
     @tweet=Tweet.new
   end
   def new
@@ -32,7 +32,7 @@ class TweetsController < ApplicationController
   end
   
   def search
-    @tweets = Tweet.search(params[:keyword]).order(created_at: :desc)
+    @tweets = Tweet.search(params[:keyword]).order(created_at: :desc).page(params[:page]).per(25)
   end
 
 

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @users=User.all.order(created_at: :desc)
+    @users=User.all.order(created_at: :desc).page(params[:page]).per(20)
   end
   def new
     @user = User.new
@@ -16,7 +16,7 @@ class UsersController < ApplicationController
     @user.update(user_params)
   end
   def search
-    @user = User.search(params[:keyword])
+    @user = User.search(params[:keyword]).order(created_at: :desc).page(params[:page]).per(20)
     
   end
   def following
