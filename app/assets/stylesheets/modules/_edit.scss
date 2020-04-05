@@ -25,6 +25,7 @@
     
     .icoico{
       margin-top: 158px;
+      display: block;
     }
     .icoimage{
       margin: 12px 0 0 0;
@@ -32,6 +33,7 @@
     font-size: 16px;
     font-weight: bold;
     color: #ccc;
+    display: block;
     }
   
    }
@@ -40,24 +42,49 @@
       width: 224px;
       position: relative;
     float: right;
+    }
     .mainajaxmain{
-      position: relative;
-      height: 36px;
-      width: 147px;
-      background: #2490d0;
-      overflow: hidden;
-      border: 2px #ddd solid;
-      border-radius: 4px;
-      color: #fff;
-      font-size: 12px;
-      text-align: center;
-      cursor: pointer;
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 5px;
+      font-size: 13px;
+      color: #FF3B30;
+    }
+      .mainaakjs{
+        position: relative;
+        height: 36px;
+        width: 147px;
+        background: #2490d0;
+        overflow: hidden;
+        border: 2px #ddd solid;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        cursor: pointer;
+      }
     .image_form{
       font-size: 13px;
     padding: 8px 8px 8px 8px;
-    }
-    }
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    font-size: 100px;
+    opacity: 0;
+    cursor: pointer;  
   }
+  .textextx{
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 147px;
+    height: 32px;
+    font-weight: bold;
+    }
+    
+  
       }
       #tweet_temp{
         margin-top: 20px;
