@@ -64,6 +64,9 @@
         text-align: center;
         cursor: pointer;
       }
+      .mainaakjs:hover{
+        background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+      }
     .image_form{
       font-size: 13px;
     padding: 8px 8px 8px 8px;
@@ -91,7 +94,7 @@
         margin-bottom: 20px;;
       }
       select {
-
+        width: 200px;
   /* styling */
   background-color: white;
   // border: thin solid blue;
@@ -107,70 +110,66 @@
 }
 select#tweet_temp{
   background-image:
-    linear-gradient(45deg, transparent 50%, gray 50%),
-    linear-gradient(135deg, gray 50%, transparent 50%),
-    radial-gradient(#ddd 70%, transparent 72%);
-  background-position:
-    calc(100% - 20px) calc(1em + 2px),
-    calc(100% - 15px) calc(1em + 2px),
-    calc(100% - .5em) .5em;
-  background-size:
-    5px 5px,
-    5px 5px,
-    1.5em 1.5em;
-  background-repeat: no-repeat;
+  linear-gradient(45deg, transparent 50%, gray 50%),
+  linear-gradient(135deg, gray 50%, transparent 50%),
+  linear-gradient(to right, #ccc, #ccc);
+background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  calc(100% - 2.5em) 0.5em;
+background-size:
+  5px 5px,
+  5px 5px,
+  1px 1.5em;
+background-repeat: no-repeat;
 }
 select#tweet_sex {
   background-image:
-    linear-gradient(45deg, transparent 50%, gray 50%),
-    linear-gradient(135deg, gray 50%, transparent 50%),
-    linear-gradient(to right, #ccc, #ccc);
-  background-position:
-    calc(100% - 20px) calc(1em + 2px),
-    calc(100% - 15px) calc(1em + 2px),
-    calc(100% - 2.5em) 0.5em;
-  background-size:
-    5px 5px,
-    5px 5px,
-    1px 1.5em;
-  background-repeat: no-repeat;
+  linear-gradient(45deg, transparent 50%, gray 50%),
+  linear-gradient(135deg, gray 50%, transparent 50%),
+  linear-gradient(to right, #ccc, #ccc);
+background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  calc(100% - 2.5em) 0.5em;
+background-size:
+  5px 5px,
+  5px 5px,
+  1px 1.5em;
+background-repeat: no-repeat;
 }
 select#tweet_tall {
   background-image:
-    linear-gradient(45deg, transparent 50%, gray 50%),
-    linear-gradient(135deg, gray 50%, transparent 50%),
-    linear-gradient(to right, #ccc, #ccc);
-  background-position:
-    calc(100% - 20px) calc(1em + 2px),
-    calc(100% - 15px) calc(1em + 2px),
-    calc(100% - 2.5em) 0.5em;
-  background-size:
-    5px 5px,
-    5px 5px,
-    1px 1.5em;
-  background-repeat: no-repeat;
+  linear-gradient(45deg, transparent 50%, gray 50%),
+  linear-gradient(135deg, gray 50%, transparent 50%),
+  linear-gradient(to right, #ccc, #ccc);
+background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  calc(100% - 2.5em) 0.5em;
+background-size:
+  5px 5px,
+  5px 5px,
+  1px 1.5em;
+background-repeat: no-repeat;
 }
 select#tweet_typestyle{
   background-image:
-    linear-gradient(45deg, transparent 50%, blue 50%),
-    linear-gradient(135deg, blue 50%, transparent 50%),
-    linear-gradient(to right, skyblue, skyblue);
-  background-position:
-    calc(100% - 20px) calc(1em + 2px),
-    calc(100% - 15px) calc(1em + 2px),
-    100% 0;
-  background-size:
-    5px 5px,
-    5px 5px,
-    2.5em 2.5em;
-  background-repeat: no-repeat;
+  linear-gradient(45deg, transparent 50%, gray 50%),
+  linear-gradient(135deg, gray 50%, transparent 50%),
+  linear-gradient(to right, #ccc, #ccc);
+background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  calc(100% - 2.5em) 0.5em;
+background-size:
+  5px 5px,
+  5px 5px,
+  1px 1.5em;
+background-repeat: no-repeat;
 }
 
-#tweet_typestyle:hover{
-  background-color:white;
-  border-left:3px solid #f3a1a1;
 
-}
 #tweet_sex{
   display: flex;
   text-align: center;
@@ -204,7 +203,7 @@ select#tweet_typestyle{
           margin-bottom: 20px;
         }
         .submit-btn:hover{
-          background: #67c5ff;
+          background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
           color: white;
         }
         

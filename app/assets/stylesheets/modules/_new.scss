@@ -25,7 +25,7 @@
     font-weight: bold;
     word-break: break-all;
     word-break: break-word;
-    i{color:#6A6E71;}
+    // i{color:#6A6E71;}
     .stst{
       color:#2490d0 ;
     }
@@ -125,6 +125,9 @@
     text-align: center;
     cursor: pointer;
     }
+    .mainaakjs:hover{
+      background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    }
     .image_form{
       font-size: 13px;
     padding: 8px 8px 8px 8px;
@@ -153,137 +156,130 @@
         margin-bottom: 20px;
       }
       select {
-
-  /* styling */
-  background-color: white;
-  // border: thin solid blue;
-  border-radius: 4px;
-  display: inline-block;
-  font: inherit;
-  line-height: 1.5em;
-  padding: 0.5em 3.5em 0.5em 1em;
-  margin: 0;      
-  box-sizing: border-box;
-  // -webkit-appearance: none;
-  // -moz-appearance: none;
-}
-select#tweet_temp{
-  background-image:
-    linear-gradient(45deg, transparent 50%, gray 50%),
-    linear-gradient(135deg, gray 50%, transparent 50%),
-    radial-gradient(#ddd 70%, transparent 72%);
-  background-position:
-    calc(100% - 20px) calc(1em + 2px),
-    calc(100% - 15px) calc(1em + 2px),
-    calc(100% - .5em) .5em;
-  background-size:
-    5px 5px,
-    5px 5px,
-    1.5em 1.5em;
-  background-repeat: no-repeat;
-}
-select#tweet_typestyle{
-  background-image:
-    linear-gradient(45deg, transparent 50%, blue 50%),
-    linear-gradient(135deg, blue 50%, transparent 50%),
-    linear-gradient(to right, skyblue, skyblue);
-  background-position:
-    calc(100% - 20px) calc(1em + 2px),
-    calc(100% - 15px) calc(1em + 2px),
-    100% 0;
-  background-size:
-    5px 5px,
-    5px 5px,
-    2.5em 2.5em;
-  background-repeat: no-repeat;
-}
-
-#tweet_typestyle:hover{
-  background-color:white;
-  border-left:3px solid #f3a1a1;
-
-}
-select#tweet_sex {
-  background-image:
-    linear-gradient(45deg, transparent 50%, gray 50%),
-    linear-gradient(135deg, gray 50%, transparent 50%),
-    linear-gradient(to right, #ccc, #ccc);
-  background-position:
-    calc(100% - 20px) calc(1em + 2px),
-    calc(100% - 15px) calc(1em + 2px),
-    calc(100% - 2.5em) 0.5em;
-  background-size:
-    5px 5px,
-    5px 5px,
-    1px 1.5em;
-  background-repeat: no-repeat;
-}
-select#tweet_tall {
-  background-image:
-    linear-gradient(45deg, transparent 50%, gray 50%),
-    linear-gradient(135deg, gray 50%, transparent 50%),
-    linear-gradient(to right, #ccc, #ccc);
-  background-position:
-    calc(100% - 20px) calc(1em + 2px),
-    calc(100% - 15px) calc(1em + 2px),
-    calc(100% - 2.5em) 0.5em;
-  background-size:
-    5px 5px,
-    5px 5px,
-    1px 1.5em;
-  background-repeat: no-repeat;
-}
-#tweet_typestyle{
-  display: flex;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  label{
-    margin-left: 255px;
-    margin-right: 255px;
-    margin-bottom: 20px;
-  }
-  label input[type="checkbox"] ~ i.fa.fa-square-o{
-    color: #c8c8c8;    display: inline;
-}
-}
-#tweet_sex{
-  display: flex;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  label{
-    margin-left: 255px;
-    margin-right: 255px;
-    margin-bottom: 20px;
-  }
-  label input[type="checkbox"] ~ i.fa.fa-square-o{
-    color: #c8c8c8;    display: inline;
-}
-}
-#tweet_tall{
-        // margin: 0 250px 30px 250px;
-          margin-bottom: 20px;
-          margin-top:20px;
+width: 200px;
+        /* styling */
+        background-color: white;
+        // border: thin solid blue;
+        border-radius: 4px;
+        display: inline-block;
+        font: inherit;
+        line-height: 1.5em;
+        padding: 0.5em 3.5em 0.5em 1em;
+        margin: 0;      
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
       }
-#tweet_text{
-        height: 200px;
-        margin-bottom: 20px;
+      select#tweet_temp{
+        background-image:
+          linear-gradient(45deg, transparent 50%, gray 50%),
+          linear-gradient(135deg, gray 50%, transparent 50%),
+          linear-gradient(to right, #ccc, #ccc);
+        background-position:
+          calc(100% - 20px) calc(1em + 2px),
+          calc(100% - 15px) calc(1em + 2px),
+          calc(100% - 2.5em) 0.5em;
+        background-size:
+          5px 5px,
+          5px 5px,
+          1px 1.5em;
+        background-repeat: no-repeat;
+      }
+      select#tweet_sex {
+        background-image:
+          linear-gradient(45deg, transparent 50%, gray 50%),
+          linear-gradient(135deg, gray 50%, transparent 50%),
+          linear-gradient(to right, #ccc, #ccc);
+        background-position:
+          calc(100% - 20px) calc(1em + 2px),
+          calc(100% - 15px) calc(1em + 2px),
+          calc(100% - 2.5em) 0.5em;
+        background-size:
+          5px 5px,
+          5px 5px,
+          1px 1.5em;
+        background-repeat: no-repeat;
+      }
+      select#tweet_tall {
+        background-image:
+          linear-gradient(45deg, transparent 50%, gray 50%),
+          linear-gradient(135deg, gray 50%, transparent 50%),
+          linear-gradient(to right, #ccc, #ccc);
+        background-position:
+          calc(100% - 20px) calc(1em + 2px),
+          calc(100% - 15px) calc(1em + 2px),
+          calc(100% - 2.5em) 0.5em;
+        background-size:
+          5px 5px,
+          5px 5px,
+          1px 1.5em;
+        background-repeat: no-repeat;
+      }
+      select#tweet_typestyle{
+        background-image:
+        linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        linear-gradient(to right, #ccc, #ccc);
+      background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 2.5em) 0.5em;
+      background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+      background-repeat: no-repeat;
+      }
+      
+     
+      #tweet_sex{
+        display: flex;
+        text-align: center;
+        margin-bottom: 30px;
         margin-top: 20px;
-      }
-      .submit-btn{
-          margin: 0 auto;
-          font-size: 15px;
-          color: #67c5ff;
-          border: solid 2px #67c5ff;
-          border-radius: 3px;
-          transition: .4s;
-          padding: 15px;
+        label{
+          margin-left: 255px;
+          margin-right: 255px;
           margin-bottom: 20px;
         }
-        .submit-btn:hover{
-          background: #67c5ff;
-          color: white;
-        }
+        label input[type="checkbox"] ~ i.fa.fa-square-o{
+          color: #c8c8c8;    display: inline;
       }
-    }
+      }
+      #tweet_tall{
+              // margin: 0 250px 30px 250px;
+                margin-bottom: 30px;
+            }
+      #tweet_text{
+              height: 200px;
+              margin-bottom: 15px;
+            }
+            .submit-btn{
+                margin: 0 auto;
+                font-size: 15px;
+                color: #67c5ff;
+                border: solid 2px #67c5ff;
+                border-radius: 3px;
+                transition: .4s;
+                padding: 15px;
+                margin-bottom: 20px;
+              }
+              .submit-btn:hover{
+                // background: #67c5ff;
+                background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+                color: white;
+              }
+            }
+            }
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      

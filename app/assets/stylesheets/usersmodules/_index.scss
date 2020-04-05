@@ -27,7 +27,7 @@ display: flex;
   left:235px;/*アイコン左右の位置調整*/
   top:0;
   background:none;
-  color:#666;
+  // color:#666;
   border:none;
   font-size:30px;/*アイコンサイズ*/
   cursor: pointer;
@@ -109,5 +109,21 @@ display: flex;
     border-radius: 2px;
     background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
     text-align: center;
+  }
+  .submit-btnaa{
+    margin: 0 auto;
+    font-size: 15px;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 26.3%;
+  }
+  .submit-btnaa:hover{
+    background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    color: white;
   }
 
