@@ -84,8 +84,10 @@ text-align: center;
   width: 276px;
     height: 368px;
     float: left;
+    margin: 0 auto;
   .icoicos{
     margin-top: 158px;
+    display: block;
   }
   .icoimages{
     margin: 12px 0 0 0;
@@ -93,6 +95,7 @@ text-align: center;
   font-size: 16px;
   font-weight: bold;
   color: #ccc;
+  display: block;
   }
  }
  .mainmainimages{
@@ -101,13 +104,49 @@ text-align: center;
   height: 368px;
   position: relative;
   float: right;
-
+ }
+  .mainajaxmainss{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-size: 13px;
+    color: #FF3B30;
+  }
+  .mainaakjss{
+    position: relative;
+    height: 36px;
+    width: 147px;
+    background: #2490d0;
+    overflow: hidden;
+    border: 2px #ddd solid;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+  }
 .image_form{
   font-size: 13px;
 padding: 8px 8px 8px 8px;
+position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    font-size: 100px;
+    opacity: 0;
+    cursor: pointer;  
+}
+.textextxs{
+  position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 147px;
+    height: 32px;
+    font-weight: bold;
 }
 
-}
+
 .fufrom{
   margin-bottom: 20px;
   width: 100%;

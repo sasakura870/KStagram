@@ -83,3 +83,15 @@ display: flex;
       background-image: url(icon-bird.png)
     }    
   
+  .follow-btn{
+    position: relative;
+    display: block;
+    padding: 8px 0 8px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border: 1px #d91a3b solid;
+    border-radius: 2px;
+  }
+
