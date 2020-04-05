@@ -94,6 +94,17 @@ display: flex;
     // font-weight: bold;
     // border: 1px #d91a3b solid;
     border-radius: 2px;
-    background: #05FBFF	;
+    background-color: #FFFF00;	
+  }
+  .follow-btns{
+    display: block;
+    padding: 8px 20px 8px 20px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #fff;
+    // font-weight: bold;
+    // border: 1px #d91a3b solid;
+    border-radius: 2px;
+    background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
   }
 
