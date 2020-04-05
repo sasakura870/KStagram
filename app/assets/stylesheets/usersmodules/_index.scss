@@ -6,6 +6,7 @@
 display: flex;
 //  background-color: #d2d2d2;
 
+}
 .search-formss{
   position:relative;
   margin-bottom:20px;
@@ -36,7 +37,7 @@ display: flex;
     
   }
 }
-}
+
 .gbl_bodyssss{
     // background-color: rgba(var(--b3f, 250, 250, 250), 1);
 }
@@ -95,6 +96,7 @@ display: flex;
     // border: 1px #d91a3b solid;
     border-radius: 2px;
     background-color: #FFFF00;	
+    
   }
   .follow-btns{
     display: block;
@@ -106,5 +108,6 @@ display: flex;
     // border: 1px #d91a3b solid;
     border-radius: 2px;
     background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    text-align: center;
   }
 
