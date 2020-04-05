@@ -68,13 +68,16 @@ text-align: center;
   // height: 50px;
   // margin-bottom: 30px;
 }
+.seceljago{
+  width: 180px;
+}
 .sectionimagess{
-  
   margin-top: 20px;
+}
   .subsubsubs{
    
   // height: 310px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   display: flex;
   }
   .subsubimageboxs{
@@ -83,9 +86,12 @@ text-align: center;
   background: #fff;
   width: 276px;
     height: 368px;
-    float: left;
+    // float: left;
+    margin: 0 auto;
+  }
   .icoicos{
     margin-top: 158px;
+    display: block;
   }
   .icoimages{
     margin: 12px 0 0 0;
@@ -93,21 +99,58 @@ text-align: center;
   font-size: 16px;
   font-weight: bold;
   color: #ccc;
+  display: block;
   }
- }
+ 
  .mainmainimages{
   padding: 154px 0 0 0;
-  width: 276px;
-  height: 368px;
+    width: 224px;
+    position: relative;
+    float: right;
+ }
+.mainajaxmainss{
+  display: none;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-size: 13px;
+    color: #FF3B30;
+}
+.mainaakjs{
   position: relative;
-  float: right;
-
+    height: 36px;
+    width: 147px;
+    background: #2490d0;
+    overflow: hidden;
+    border: 2px #ddd solid;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
 .image_form{
   font-size: 13px;
-padding: 8px 8px 8px 8px;
+    padding: 8px 8px 8px 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    font-size: 100px;
+    opacity: 0;
+    cursor: pointer;
+}
+.textextxs{
+  position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 147px;
+    height: 32px;
+    font-weight: bold;
+    display: block;
 }
 
-}
+
 .fufrom{
   margin-bottom: 20px;
   width: 100%;
@@ -127,8 +170,6 @@ padding: 8px 8px 8px 8px;
     padding: 0.2em 3.0em 0.2em 1em;
     margin: 0;      
     box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
   }
   
   
@@ -150,13 +191,13 @@ padding: 8px 8px 8px 8px;
   }
 }
 .fffssss{
-  display: flex;
+  // display: flex;
   // margin-top: 300px;
   margin-bottom: 20px;
-  margin-left: 30px;
+  // margin-left: 30px;
   // text-align: center;
   .field{
-  margin-left: 55px;
+  
   margin-bottom: 20px;
   }
 }
@@ -191,7 +232,9 @@ padding: 8px 8px 8px 8px;
     5px 5px,
     5px 5px,
     1px 1.5em;
-  background-repeat: no-repeat;    
+  background-repeat: no-repeat;
+  width: 200px;
+  font-size: 13px;
   }
   select#user_sex {
     background-image:
@@ -207,8 +250,14 @@ padding: 8px 8px 8px 8px;
     5px 5px,
     1px 1.5em;
   background-repeat: no-repeat;
+  width: 200px;
+  font-size: 13px;
   }
-
+  #user_age{
+    
+  width: 200px;
+  font-size: 13px;
+  }
 .fieldss{
   width: 100%;
   label{
@@ -240,5 +289,4 @@ padding: 8px 8px 8px 8px;
 }
 .actionss{
   margin-bottom: 20px;
-}
 }

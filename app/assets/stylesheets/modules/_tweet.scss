@@ -114,8 +114,9 @@
      }
      .weather-report{
        background-color:#EEFFFF ;
-       margin-bottom: 10px;
+       margin-bottom: 6px;
        border-radius: 5px;
+       margin-bottom: 6px;
      }
       .main{
         padding-top: 100px;
@@ -182,6 +183,12 @@
       }
     
     }
+    .pagination{
+      text-align: center;
+      a{
+        text-decoration: none;
+      }
+    }
   //   .foooot{
   //     background-color: black;
   // width: 100%;
@@ -191,6 +198,38 @@
   // bottom: 0;
   // position: fixed;
     // }
-  
+    .pagetop{
+      width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0px;
+  background: #ef3f98;
+  opacity: 0.6;
+  border-radius: 50%;
+    }
+    .page_top a{
+      position: relative;
+      display: block;
+      width: 50px;
+      height: 50px;
+      text-decoration: none;
+    }
+    .page_top a::before{
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: '\f102';
+      font-size: 25px;
+      color: #fff;
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: -5px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      text-align: center;
+    }
 
   

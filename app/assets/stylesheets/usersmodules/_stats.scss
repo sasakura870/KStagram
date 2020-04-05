@@ -1,0 +1,16 @@
+.stats{
+  display: flex;
+  margin-top: 20px;
+  a{
+    text-decoration: none;
+    border: 1px #ddd solid;
+    width: 50%;
+    .stat{
+      color: #333;
+    }
+    .followstat{
+      font-weight: normal;
+    
+    }
+  }
+}

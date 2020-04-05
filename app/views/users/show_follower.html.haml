@@ -1,0 +1,11 @@
+.wrappers
+  = render "header"
+  .followmain
+    .showformshousai  フォロワー
+    - @user.followers.each do |user|
+      %table
+        %tr.kaaasss
+          %td.ssalasss
+            = link_to  user_path(user) do
+              = user.name
+        -# %td= link_to '詳細', user_path(user)

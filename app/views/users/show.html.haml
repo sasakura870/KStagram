@@ -1,5 +1,6 @@
 .wrappers
   = render "header"
+  .gbl_main
   .useriine
     .useriineiine
       .userprofs
@@ -13,8 +14,9 @@
                 %p.kskskaas
                   = link_to  edit_user_registration_path do
                     プロフィール編集
-            .useruserso
-            
+            -# .useruserso
+            = render 'follow_form'
+            = render 'stats'
           .user_mains
             .intro
               .ssssssa
@@ -54,7 +56,6 @@
                   %td.ssala
                     %a{:href => "/users/#{tweet.user.id}"}= tweet.user.name
                   %td.ssala
-                    %a{:href => "/tweets/#{tweet.id}"}= tweet.title
-
+                    %a{:href => "/tweets/#{tweet.id}"}= tweet.title 
         
 

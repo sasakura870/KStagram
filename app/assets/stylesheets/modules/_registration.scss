@@ -38,15 +38,23 @@
         #user_password{
           line-height: 40px;
         } 
+        #user_password_confirmation{
+          line-height: 40px;
+        }
       }
     }
   }
+}
+.loginbvtn{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  
 }
 .new_session{
   text-decoration: none;
   line-height: 40px;
   border: solid 1px white;
-  padding: 0 50px;
+  padding: 0 42px;
   margin-top: 20px;
   font-size: 20px;
   color: black;
@@ -62,4 +70,12 @@
   opacity: .9;
   color: #73a9ff;
   margin: 0 auto;
+}
+.forgetpass{
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+.btnpassword{
+  margin-top: 30px;
+  margin-bottom: 30px;
 }

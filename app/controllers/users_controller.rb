@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @users=User.all.order(created_at: :desc)
+    @users=User.all.order(created_at: :desc).page(params[:page]).per(20)
   end
   def new
     @user = User.new
@@ -15,8 +15,19 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @user.update(user_params)
   end
+  def following
+    @user  = User.find(params[:id])
+    @users = @user.followings
+    render 'show_follow'
+end
+
+def followers
+  @user  = User.find(params[:id])
+  @users = @user.followers
+  render 'show_follower'
+end
   def search
-    @user = User.search(params[:keyword])
+    @user = User.search(params[:keyword]).order(created_at: :desc).page(params[:page]).per(20)
     
   end
   private

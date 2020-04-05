@@ -1,8 +1,11 @@
 .mainleft
-  %h1.citynames 東京
+  %h1.citynames 
+    Tokyo
   #cityname 
     #weather
       .weather-report
+
+  
 .main
   .mainindex
     - @tweets.each do |tweet|
@@ -15,4 +18,8 @@
             =tweet.user.name
           .mainnameright
             = tweet.updated_at.strftime("%Y-%m-%d %H:%M")
-  .foooot
+  = paginate(@tweets)
+
+  -# %p.pagetop
+  -#   %a{:href => "/"}
+      

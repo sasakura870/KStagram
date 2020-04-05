@@ -12,7 +12,7 @@ $(function() {
     var insertHTML = "";
     var cityName = '<h2>' + data.city.name + '</h2>';
     $('#city-name').html(cityName);
-    for (var i = 0; i <= 12; i = i + 1) {
+    for (var i = 0; i <= 11; i = i + 1) {
       insertHTML += buildHTML(data, i);
     }
     $('#weather').html(insertHTML);
