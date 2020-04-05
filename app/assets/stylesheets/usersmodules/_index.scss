@@ -82,16 +82,18 @@ display: flex;
     table td.icon{
       background-image: url(icon-bird.png)
     }    
-  
-  .follow-btn{
+  .gfffa{
     position: relative;
+  }
+  .follow-btn{
     display: block;
-    padding: 8px 0 8px 0;
-    text-align: center;
+    padding: 8px 20px 8px 20px;
+    margin: 0 auto;
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
-    border: 1px #d91a3b solid;
+    // font-weight: bold;
+    // border: 1px #d91a3b solid;
     border-radius: 2px;
+    background: #05FBFF	;
   }
 
