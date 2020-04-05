@@ -7,6 +7,12 @@ Rails.application.routes.draw do
       get 'search'
     end
   end
+  resources :users do
+    member do
+     get :following, :followers
+    end
+  end
+  resources :relationships,       only: [:create, :destroy]
   resources :tweets do
     resources :likes, only: [:create, :destroy]
     resources :comments, only: :create

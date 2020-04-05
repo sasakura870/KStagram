@@ -19,6 +19,17 @@ class UsersController < ApplicationController
     @user = User.search(params[:keyword])
     
   end
+  def following
+    @user  = User.find(params[:id])
+    @users = @user.followings
+    render 'show_follow'
+end
+
+def followers
+  @user  = User.find(params[:id])
+  @users = @user.followers
+  render 'show_follower'
+end
   private
   def user_params
     params.require(:user).permit(:name,:image,:profile,:sex,:age,:tall).merge(user_id: current_user.id)
