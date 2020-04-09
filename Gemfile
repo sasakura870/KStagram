@@ -50,6 +50,15 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+# gem 'sqlite3', group: [:development, :test]
+# gem 'pg', group: :production
+# # # group :development, :test do
+# # #   gem 'sqlite3', '~> 1.3.13' #do ~ end内部に追加。他のgemは残してください。
+# # # end
+group :production do
+  gem 'pg'
+end
+
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'

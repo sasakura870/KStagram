@@ -34,13 +34,14 @@
       .kodeshousai コーデ詳細
       .tweetText
         = simple_format @tweet.text
+      .tweettweet 特徴
       .tweetsex
         = @tweet.sex
         身長:
         = @tweet.tall 
         cm
       .tweettemp
-        気温:
+        目安気温:
         =@tweet.temp
         ℃  
       .tweettypestyle
@@ -55,7 +56,7 @@
         %h3.liketweet
           いいね: #{@tweet.likes.count}
           - if current_user.already_liked?(@tweet)
-            = link_to  tweet_like_path(@tweet) , method: :delete do
+            = button_to  tweet_like_path(@tweet) , method: :delete do
               %i.favo.far.fa-heart
           - else
             = button_to tweet_likes_path(@tweet) do
