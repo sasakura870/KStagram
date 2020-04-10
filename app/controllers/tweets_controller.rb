@@ -3,6 +3,7 @@ class TweetsController < ApplicationController
   def index
     @tweets = Tweet.all.order(created_at: :desc).page(params[:page]).per(25)
     @tweet=Tweet.new
+    @all_ranks = Note.create_all_ranks
   end
   def new
     @tweet = Tweet.new

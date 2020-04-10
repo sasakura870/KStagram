@@ -1,21 +1,31 @@
-.mainleft
-  %h1.citynames 東京
-  -# #cityname 
-  -#   #weather
-  -#     .weather-report
+.mainsmainss
+  .mainleft
+    .lefttops
+      .lefttoptop
+    .leftcontents
+      .leftcontentssss
+        %h2.rankname 
+        %li.fas.fa-street-view ランキング
+        .aska 
+        -# - @all_ranks.each do |tweet|
+        -#   =tweet.title
+        
+        %ul.p-rankinglist a
+       
+    .leftbottom
 
-.main
-  .mainindex
-    - @tweets.each do |tweet|
-      .content{:style => "background-image: url(#{tweet.image});"}
-        = link_to asset_url("/tweets/#{tweet.id}", method: :get) do
-          = image_tag "/tweets/#{tweet.id}", method: :get
+  .main
+    .mainindex
+      - @tweets.each do |tweet|
+        .content{:style => "background-image: url(#{tweet.image});"}
+          = link_to asset_url("/tweets/#{tweet.id}", method: :get) do
+            = image_tag "/tweets/#{tweet.id}", method: :get
 
-        .mainname
-          .mainnameleft
-            =tweet.user.name
-          .mainnameright
-            = tweet.updated_at.strftime("%Y-%m-%d %H:%M")
-  = paginate(@tweets)
-  -# .footer
-      
+          .mainname
+            .mainnameleft
+              =tweet.user.name
+            .mainnameright
+              = tweet.updated_at.strftime("%Y-%m-%d %H:%M")
+    = paginate(@tweets)
+    -# .footer
+  
