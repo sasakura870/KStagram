@@ -94,17 +94,16 @@
   }
   
   .mainsmainss{
-    max-width: 1200px;
+    padding-top: 80px;
+    height: 100%;
     margin: 0 auto;
-    justify-content: space-between;
-    padding: 1em 0;
-    height: 100vh;
   }
      .mainleft{
-      float: left;
-       width: 22%;
-       padding-top: 80px;
-       height: 100%;
+      height: calc(100% - 60px);
+    width: 20%;
+    background-color: #bbb;
+    float: left;
+    padding: 20px;
       //  background: #F5F5F5;
       //  margin-bottom: 60px;
       }
@@ -147,29 +146,18 @@
     margin: 0 0 1.6rem;
     }
      
-     .citynames{
-       text-align: center;
-       font-size: 20px;
-     }
-     #cityname{
-      margin-left: 10px;
-      margin-right: 10px;
-     }
-     .weather-report{
-       background-color:#EEFFFF ;
-       margin-bottom: 10px;
-       border-radius: 5px;
-     }
+     
       .main{
-        width: calc(100% - 22%);
-        padding-top: 80px;
-        float: right;
+       height: calc(100% - 60px);
+    width: 80%;
+    // background-color: #ccc;
+    float: left;
       //  width: 78%;
       //  margin-bottom: 60px;
       }
        .mainindex{
         // min-height :100vh;
-        padding: 10px;
+        padding: 20px;
         display: flex;
         flex-wrap:wrap; 
         direction: ltr;
