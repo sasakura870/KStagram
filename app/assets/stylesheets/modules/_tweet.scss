@@ -138,15 +138,22 @@
       }
       .aska{
         display: flex;
-        width: 100%;
+    width: 250px;
     border: 1px solid #ddd;
     border-radius: 3px;
     padding: .5em;
-    background-color: #fff;
     margin-bottom: 10px;
       }
       .profaska{
         margin-right: 1em;
+      }
+      .profusersaska{
+        float: right;
+        img{
+         float: right;
+         width: 150px;
+         height: 150px;
+        }
       }
     .leftbottom{
       position: relative;
@@ -157,7 +164,12 @@
     padding: 1em;
     margin: 0 0 1.6rem;
     }
-     
+    .botomhed{
+      text-align: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
+    padding: 1em 0;
+    }
      
       .main{
        height: calc(100% - 60px);
