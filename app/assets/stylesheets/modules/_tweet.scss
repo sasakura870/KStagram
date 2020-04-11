@@ -101,7 +101,6 @@
      .mainleft{
       height: calc(100% - 60px);
     width: 20%;
-    background-color: #bbb;
     float: left;
     padding: 20px;
       //  background: #F5F5F5;
@@ -135,6 +134,19 @@
     border-bottom: 1px solid #ddd;
     margin-bottom: 1em;
     padding: 1em 0;
+    font-size: 20px;
+      }
+      .aska{
+        display: flex;
+        width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: .5em;
+    background-color: #fff;
+    margin-bottom: 10px;
+      }
+      .profaska{
+        margin-right: 1em;
       }
     .leftbottom{
       position: relative;

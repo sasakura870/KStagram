@@ -15,7 +15,5 @@ class Tweet < ApplicationRecord
       Tweet.all
     end
   end
-  def self.create_all_ranks #Noteクラスからデータを取ってくる処理なのでクラスメソッド！
-    Tweet.find(Like.group(:tweet_id).order('count(tweet_id) desc').limit(3).pluck(:tweet_id))
-  end
+  
 end

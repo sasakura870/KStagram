@@ -5,10 +5,24 @@
     .leftcontents
       .leftcontentssss
         %h2.rankname 
-        %li.fas.fa-street-view ランキング
+          %li.fas.fa-street-view ランキング
         .aska 
-        -# -# - @all_ranks.each do |tweet|
-        -# -#   =tweet.title
+          .profaska aa
+          .profusersaska
+          =current_user.name
+        .aska 
+          .profaska aa
+          .profusersaska
+          =current_user.name
+
+        -# - @all_ranks.each.with_index(1) do |tweet, i|
+        -#   第
+        -#   = i
+        -#   位
+        -#   = tweet.age
+        -# - if @all_ranks.present?
+        -# - @all_ranks.each do |tweet|
+        -#   =tweet.id
         
         -# %ul.p-rankinglist a
        
