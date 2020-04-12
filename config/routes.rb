@@ -19,9 +19,18 @@ Rails.application.routes.draw do
     collection do
       get 'search'
     end
+    collection do
+      get 'about'
+    end
+    collection do
+      get 'kiyaku'
+    end
+    collection do
+      get 'privacy'
+    end
   end
     
-  
+  # get '/tweet/hashtag/:name', to: "tweets#hashtag"
   
   
 end

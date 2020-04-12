@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;
 }
-
+// body{
+  
+//     background: #fff4e4;
+// }
 .wrapper{
 //  display: flex;
   height: 100%;
@@ -94,9 +97,20 @@
   }
   
   .mainsmainss{
+    position: relative;
+    background: #f08a5d;
+    color: #fff;
+    z-index: 0;
+    margin: 0 auto 1em;
     padding-top: 80px;
-    height: 100%;
+  }
+  .alsldlld{
+    display: flex;
+    max-width: 1200px;
     margin: 0 auto;
+    justify-content: space-between;
+   
+    padding: 10px 0;
   }
      .mainleft{
       height: calc(100% - 60px);
@@ -130,6 +144,7 @@
         border-bottom: 1px solid #ddd;
         margin-bottom: 1em;
         padding: 1em 0;
+        background: #fff;
       }
       
       .rankname{
@@ -142,22 +157,22 @@
       }
       .aska{
         display: flex;
-    width: 250px;
     border: 1px solid #ddd;
     border-radius: 3px;
     padding: .5em;
     margin-bottom: 10px;
+    text-align: center;
       }
       .profaska{
         margin-right: 1em;
+        img{
+          height: 70px;
+          width: 70px;
+        }
       }
       .profusersaska{
         float: right;
-        img{
-         float: right;
-         width: 150px;
-         height: 150px;
-        }
+        
       }
     .leftbottom{
       position: relative;
@@ -241,8 +256,43 @@
         opacity: 0.8; 
         background-color: rgba(var(--b3f,250,250,250),1);
       }
+    .footer{
+      background: #232b33;
+    color: rgba(255,255,255,0.4);
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+    border-top: 1px solid #e4e4e4;
+    }
+    .p-footer{
+      max-width: 1200px;
+    margin: 0 auto;
+    height: 60px;
+    }
+    .p-footer__link-list{
+      display: flex;
+    margin-bottom: 1em;
+    padding-left: 0;
     
-    
+    }
+    .p-footer__link-item{
+      margin-right: 1em;
+      a{
+        text-decoration: none;
+        color: hsla(0,0%,100%,.5);
+      }
+      
+    }
+    .oooo{
+      text-align: center;
+    }
+    .footers{
+      
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+    border-top: 1px solid #e4e4e4;
+    }
     
     // .foooot{
     //   height: 90px;

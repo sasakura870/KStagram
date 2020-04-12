@@ -1,4 +1,5 @@
 .mainsmainss
+.alsldlld
   .mainleft
     .lefttops 
       %h2.timenownow 
@@ -10,13 +11,17 @@
         %h2.rankname 
           %li.fas.fa-street-view ランキング
         .aska 
-          .profaska aa
+        -# - @all_ranks.each do |tweet|
+        -#   =tweet.user.name
+          .profrankin 1
+          .profaska 
+            ああ
           .profusersaska
-            = image_tag(@tweet.image_url)
+            = current_user.name
         .aska 
           .profaska aa
           .profusersaska
-            = image_tag(@tweet.image_url)
+            f
 
         -# - @all_ranks.each.with_index(1) do |tweet, i|
         -#   第
@@ -47,5 +52,17 @@
             .mainnameright
               = tweet.updated_at.strftime("%Y-%m-%d %H:%M")
     = paginate(@tweets)
-    -# .footer
+.footer
+  .p-footer
+    %ul.p-footer__link-list
+      %li.p-footer__link-item
+        = link_to about_tweets_path do
+          KStagramとは
+      %li.p-footer__link-item
+        = link_to kiyaku_tweets_path do
+          利用規約
+      %li.p-footer__link-item
+        = link_to privacy_tweets_path do
+          プライバシーポリシー
+  .oooo Copyright © KStagram 2020
   

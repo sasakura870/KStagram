@@ -3,7 +3,7 @@ class TweetsController < ApplicationController
   def index
     @tweets = Tweet.all.order(created_at: :desc).page(params[:page]).per(25)
     @tweet=Tweet.new
-    
+    # @all_ranks = Tweet.find(Like.group(:tweet_id).order('count(tweet_id) desc').limit(3).pluck(:tweet_id))
   end
   def new
     @tweet = Tweet.new
@@ -35,7 +35,7 @@ class TweetsController < ApplicationController
   def search
     @tweets = Tweet.search(params[:keyword]).order(created_at: :desc).page(params[:page]).per(25)
   end
-
+  
 
   private
   def tweet_params

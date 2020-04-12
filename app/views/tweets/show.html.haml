@@ -84,7 +84,19 @@
             = form_with(model: [@tweet, @comment], local: true,id: "new_comment") do |form|
               = form.text_area :text, placeholder: "  コメントを追加...", rows: "2", class: "textbox"
               = form.submit "投稿する", class: "comments_sent"
-          
+  .footer
+    .p-footer
+      %ul.p-footer__link-list
+        %li.p-footer__link-item
+          = link_to about_tweets_path do
+            KStagramとは
+        %li.p-footer__link-item
+          = link_to kiyaku_tweets_path do
+            利用規約
+        %li.p-footer__link-item
+          = link_to privacy_tweets_path do
+            プライバシーポリシー
+    .oooo Copyright © KStagram 2020        
 
 
 

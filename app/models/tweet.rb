@@ -8,6 +8,8 @@ class Tweet < ApplicationRecord
   has_many :likes
   has_many :liked_users, through: :likes, source: :user
   
+  
+
   def self.search(search)
     if search
       Tweet.where('text LIKE(?) or title LIKE(?)  or sex LIKE(?)  or tall LIKE(?)  or temp LIKE(?) or typestyle LIKE(?)',"%#{search}%", "%#{search}%", "%#{search}%", "%#{search}%","%#{search}%","%#{search}%")
