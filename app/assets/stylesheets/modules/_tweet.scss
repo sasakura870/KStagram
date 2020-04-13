@@ -114,7 +114,7 @@
   }
      .mainleft{
       height: calc(100% - 60px);
-    width: 20%;
+    width: 25%;
     float: left;
     padding: 20px;
       //  background: #F5F5F5;
@@ -141,7 +141,7 @@
       }
       .leftcontentssss{
         text-align: center;
-        border-bottom: 1px solid #ddd;
+        border: 1px solid #ddd;
         margin-bottom: 1em;
         padding: 1em 0;
         background: #fff;
@@ -157,9 +157,11 @@
       }
       .aska{
         display: flex;
-    border: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    // border-bottom: 1px solid #ddd;
     border-radius: 3px;
-    padding: .5em;
+    padding: 1em 1em;
+    width: 100%;
     margin-bottom: 10px;
     text-align: center;
       }
@@ -192,7 +194,7 @@
      
       .main{
        height: calc(100% - 60px);
-    width: 80%;
+    width: 75%;
     // background-color: #ccc;
     float: left;
       //  width: 78%;
@@ -209,6 +211,7 @@
         width: 100%;
         
       }
+     
     .content{
       margin-left: 25px;
       margin-right: 25px;
@@ -231,8 +234,12 @@
         position: absolute;
         opacity: 0.1;
         transition:all 0.3s;
+     
       }
+     
     }
+    
+    
     .mainname{
       margin-top: 506px;
       text-align: center;
