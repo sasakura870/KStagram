@@ -18,8 +18,41 @@
   font-family: 'Homemade Apple', cursive;
 }
 .aboutshousaida{
-  font-size: 3rem;
+  font-size: 2rem;
     max-width: 1200px;
     text-align: center;
-    margin: 0 auto 5em;
+    margin: 0 auto 1em;
+
+}
+.aboutshousaidayo{
+  font-size: 1.5rem;
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto 5em;
+  
+}
+.hedabout{
+  h2{
+    text-align: center;
+    margin: 10px;
+  }
+}
+.aboutshousaimenu{
+  border: 3px solid #45494Be7;
+    margin: 0 auto 1em;
+    width: 80%;
+}
+.aboutmenuran{
+display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1em;
+}
+.aboutmenuran-left{
+  flex: 1 1;
+}
+.aboutmenuran-right{
+  flex: 2 1;
+    display: flex;
+    align-items: center;
 }

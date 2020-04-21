@@ -44,33 +44,41 @@
       margin:10px;
       font-size: 30px;
       text-align: center;
+      font-weight: normal;
     }
     .tweetText{
       text-align: left;
-      margin:10px;
+      margin:30px 20px;
     }
     .tweettweet{
-      text-align: center;
+      margin: 0 auto;
       font-size: 30px;
+      
+      width: 95%;
       border-top: 1px #e6e7e8 solid;
     }
     .tweetsex{
-      margin: 0 auto;
-      opacity: 0.8;
       opacity: 0.8;
       font-size:20px;
-      text-align: center;
+      margin: 10px 20px;
+    }
+    .tweettalls{
+     
+      opacity: 0.8;
+      font-size:20px;
+      margin: 10px 20px;
     }
     .tweettemp{
       opacity: 0.8;
       font-size:20px;
-      text-align: center;
+      margin: 10px 20px;
+
     }
     
     .tweettypestyle{
       opacity: 0.8;
       font-size:20px;
-      text-align: center;
+      margin: 10px 20px;
     }
     .tweettext{
       margin-left: 75%;
@@ -79,7 +87,7 @@
       
     }
     .liketweet{
-      margin: 10px;
+      margin:10px 20px;
       display: flex;
     }
     .button_to{
@@ -98,13 +106,13 @@
     }
     .tweetuserlikename{
       list-style: none;
-      margin-left: 10px;
+      margin-left: 20px;
       margin-right: 1px; 
       // margin-bottom: 5px;
       display: inline; 
     }
     .ffsfas1{
-      margin-left: 10px;
+      margin-left: 20px;
     }
     strong{
       margin-left: 10px;
@@ -118,11 +126,13 @@
     }
     .commentscoment{
       margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
     }
     .commentsusers{
       margin-top: 10px;
-      
-        
+      margin-left: 10px;
+      margin-right: 10px;
         .formcoment{
         // display: flex;
         height: 100%;

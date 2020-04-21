@@ -11,6 +11,12 @@ Rails.application.routes.draw do
     member do
      get :following, :followers
     end
+    collection do
+      get 'about'
+    end
+    collection do
+      get 'kiyaku'
+    end
   end
   resources :relationships,       only: [:create, :destroy]
   resources :tweets do

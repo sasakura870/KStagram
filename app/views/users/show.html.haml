@@ -65,17 +65,5 @@
                     %a{:href => "/users/#{tweet.user.id}"}= tweet.user.name
                   %td.ssala
                     %a{:href => "/tweets/#{tweet.id}"}= tweet.title
-  .footer
-    .p-footer
-      %ul.p-footer__link-list
-        %li.p-footer__link-item
-          = link_to about_tweets_path do
-            KStagramとは
-        %li.p-footer__link-item
-          = link_to kiyaku_tweets_path do
-            利用規約
-        %li.p-footer__link-item
-          = link_to privacy_tweets_path do
-            プライバシーポリシー
-    .oooo Copyright © KStagram 2020           
+  =render "footer"          
                     

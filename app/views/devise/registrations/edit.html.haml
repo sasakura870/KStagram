@@ -91,16 +91,4 @@
                 -# %p
                 -#   #{button_to "アカウント削除", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
                 = link_to "戻る", :back
-  .footer
-    .p-footer
-      %ul.p-footer__link-list
-        %li.p-footer__link-item
-          = link_to about_tweets_path do
-            KStagramとは
-        %li.p-footer__link-item
-          = link_to kiyaku_tweets_path do
-            利用規約
-        %li.p-footer__link-item
-          = link_to privacy_tweets_path do
-            プライバシーポリシー
-    .oooo Copyright © KStagram 2020        
+  =render "footer" 
