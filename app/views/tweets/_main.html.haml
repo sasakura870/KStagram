@@ -1,26 +1,26 @@
 .mainsmainss
-.alsldlld
-  .mainleft
-    .lefttops 
-      %h2.timenownow 
+.main_main
+  .main_main_left
+    .main_main_left_tops 
+      %h2.main_main_left_tops_time 
         現在の時刻
-      .lefttoptop
+      .lefttop
         =Time.current.strftime("%Y-%m-%d %H:%M")
     .leftcontents
-      .leftcontentssss
-        %h2.rankname 
+      .leftcontents_top
+        %h2.leftcontents_top_rankname 
           %li.fas.fa-street-view ランキング
-        .aska 
+        .user_rank 
         -# - @all_ranks.each do |tweet|
         -#   =tweet.user.name
-          .profrankin 1
-          .profaska 
+          .user_rank_ranks 1
+          .profranks 
             ああ
-          .profusersaska
+          .profuserrank
             = current_user.name
-        .aska 
-          .profaska aa
-          .profusersaska
+        .user_rank 
+          .profranks aa
+          .profuserrank
             f
 
         -# - @all_ranks.each.with_index(1) do |tweet, i|
@@ -35,21 +35,21 @@
         -# %ul.p-rankinglist a
        
     .leftbottom
-      .botomhed 
+      .leftbottom_down 
         %h2.tagname 
           %li.fas.fa-tags オススメタグ
 
   .main
-    .mainindex
+    .main_index
       - @tweets.each do |tweet|
         .content{:style => "background-image: url(#{tweet.image});"}
           = link_to asset_url("/tweets/#{tweet.id}", method: :get) do
             = image_tag "/tweets/#{tweet.id}", method: :get
 
           .mainname
-            .mainnameleft
+            .mainname_left
               =tweet.user.name
-            .mainnameright
+            .mainname_right
               = tweet.updated_at.strftime("%Y-%m-%d %H:%M")
     = paginate(@tweets)
 

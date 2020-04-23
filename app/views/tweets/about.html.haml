@@ -1,66 +1,54 @@
 .wrapper
   = render "header"
   .mainsmainss
-  .aboutmains
-    .nametoha 
-      %h2.nametitle KStgramとは
-      .aboutshousaida
+  .about
+    .about_name
+      %h2.nametitle KStgramとは・・・
+      .about_name_shousai
         %p ファッションコーディネートアプリです
-      .aboutshousaidayo
+      .about_name_shousai1
         %p 普段着る服、気温によって着る服装をピックアップして記録・共有できるサービスです。
       %section
-        .aboutshousaimenu
-          .aboutmenuran
-            .aboutmenuran-left
-              .aboutmenuran-lefticon 
+        .aboutmenu
+          .aboutmenu_all
+            .aboutmenu_all-left
+              .aboutmenu_all-left-icon 
                 .abouticonda
                   %i.fas.fa-home
                 .aboutmenuran-title  ホームボタン
-            .aboutmenuran-right トップページに戻ります
-        .aboutshousaimenu  
-          .aboutmenuran
-            .aboutmenuran-left
-              .aboutmenuran-lefticon 
+            .aboutmenu_all-right トップページに戻ります
+        .aboutmenu  
+          .aboutmenu_all
+            .aboutmenu_all-left
+              .aboutmenu_all-left-icon 
                 .abouticonda
                   %i.fab.fa-instagram
                 .aboutmenuran-title  新規登録
-            .aboutmenuran-right 投稿ページに遷移します
-        .aboutshousaimenu  
-          .aboutmenuran
-            .aboutmenuran-left
-              .aboutmenuran-lefticon 
+            .aboutmenu_all-right 投稿ページに遷移します
+        .aboutmenu  
+          .aboutmenu_all
+            .aboutmenu_all-left
+              .aboutmenu_all-left-icon 
                 .abouticonda
                   %i.fas.fa-heart
                 .aboutmenuran-title  プロフィール画面
-            .aboutmenuran-right 投稿ページに遷移します
-        .aboutshousaimenu  
-          .aboutmenuran
-            .aboutmenuran-left
-              .aboutmenuran-lefticon 
+            .aboutmenu_all-right 投稿ページに遷移します
+        .aboutmenu  
+          .aboutmenu_all
+            .aboutmenu_all-left
+              .aboutmenu_all-left-icon 
                 .abouticonda
                   %i.fa.fa-user
                 .aboutmenuran-title  ログアウト
-            .aboutmenuran-right ログアウトします
-        .aboutshousaimenu  
-          .aboutmenuran
-            .aboutmenuran-left
-              .aboutmenuran-lefticon 
+            .aboutmenu_all-right ログアウトします
+        .aboutmenu  
+          .aboutmenu_all
+            .aboutmenu_all-left
+              .aboutmenu_all-left-icon 
                 .abouticonda
                   %i.fas.fa-search
                 .aboutmenuran-title  検索
-            .aboutmenuran-right 投稿情報を検索します
+            .aboutmenu_all-right 投稿情報を検索します
           
       
-  .footer
-    .p-footer
-      %ul.p-footer__link-list
-        %li.p-footer__link-item
-          = link_to about_tweets_path do
-            KStagramとは
-        %li.p-footer__link-item
-          = link_to kiyaku_tweets_path do
-            利用規約
-        %li.p-footer__link-item
-          = link_to privacy_tweets_path do
-            プライバシーポリシー
-    .oooo Copyright © KStagram 2020
+  =render "footer"

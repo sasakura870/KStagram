@@ -1,45 +1,46 @@
- .tweetshows{
+ .tweetshow{
    padding-top: 100px;
    background-color: rgba(var(--b3f,250,250,250),1);
    min-height: 100vh;
    width: 100%;
    padding-bottom: 50px;
-  .tweetshow{
-    margin: 50px auto 0;
-    margin-left: 300px;
-    margin-right: 300px;
-    background-color:rgba(var(--cdc,255,255,255),1);
-    background-size: 100% auto;
+    &_shows{
+      margin: 50px auto 0;
+      margin-left: 300px;
+      margin-right: 300px;
+      background-color:rgba(var(--cdc,255,255,255),1);
+      background-size: 100% auto;
     
-    .tweetTitle{
-      justify-content: start;
-      margin-left: 50px;
-      font-size: 4rem;
-    }
-    .tweetuser{
-      display: flex;
-      margin-left: 20px;
-      align-items: center;
-      justify-content:space-between;
-      padding-bottom: 20px;
-      a{
-        color: gray;
-        margin-right: 20px;
-        text-decoration: none;
-        font-size: 20px;
+    // .tweetTitle{
+    //   justify-content: start;
+    //   margin-left: 50px;
+    //   font-size: 4rem;
+    // }
+      &_user{
+        display: flex;
+        margin-left: 20px;
+        align-items: center;
+        justify-content:space-between;
+        padding-bottom: 20px;
+        a{
+          color: gray;
+          margin-right: 20px;
+          text-decoration: none;
+          font-size: 20px;
+        }
+     
+        &_edit{
+          text-decoration: none;
+          color: #45494Be7;
+          // margin-left: 700px;
+        }
       }
-    }
-    .editshow{
-      text-decoration: none;
-      color: #45494Be7;
-      // margin-left: 700px;
-    }
-    .tweetImage img{
-      zoom: 0.5;
-      text-align: center;
-      height: 100%;
-      width: 100%;  
-    }
+      .tweetImage img{
+        zoom: 0.5;
+        text-align: center;
+        height: 100%;
+        width: 100%;  
+      }
     .kodeshousai{
       margin:10px;
       font-size: 30px;

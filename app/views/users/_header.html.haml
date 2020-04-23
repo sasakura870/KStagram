@@ -23,9 +23,8 @@
     = link_to new_tweet_path do
       %i.fab.fa-instagram
     %li.user_info_heart
-    = link_to asset_url("/users/#{current_user.id}") do
       %i.fas.fa-heart
     %li.user_info_insta
-    = link_to destroy_user_session_path, method: :delete do
+    = link_to asset_url("/users/#{current_user.id}") do
       %i.fa.fa-user
     

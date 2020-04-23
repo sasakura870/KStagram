@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   get 'tweets/index'
   root "tweets#index"
+  get 'about', to: 'static_pages#about'
+  
   resources :users do
     collection do
       get 'search'

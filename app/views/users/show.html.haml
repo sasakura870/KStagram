@@ -1,9 +1,9 @@
 .wrappers
   = render "header"
   .gbl_main
-    .gbl_title
-      .gbl_title_container
-        .title_container 
+    .gbl_main_title
+      .gbl_main_title_container
+        .gbl_main_title_container_titles
           %h1.tit.icon_font
             %span.ico
             %i.fab.fa-instagram
@@ -54,16 +54,17 @@
                 %p.proffff
                   =@user.profile
                 %br
-            %h3.llllls いいねしている投稿
-            %table
-              %tr.lsal
-                %th.ssala ユーザ名
-                %th.ssala タイトル
-              - @user.liked_tweets.each do |tweet|
-                %tr.kaaa
-                  %td.ssala
-                    %a{:href => "/users/#{tweet.user.id}"}= tweet.user.name
-                  %td.ssala
-                    %a{:href => "/tweets/#{tweet.id}"}= tweet.title
+  .aaaaaaa          
+    %h3.llllls いいねしている投稿
+    %table
+      %tr.lsal
+        %th.ssala ユーザ名
+        %th.ssala タイトル
+      - @user.liked_tweets.each do |tweet|
+        %tr.kaaa
+          %td.ssala
+            %a{:href => "/users/#{tweet.user.id}"}= tweet.user.name
+          %td.ssala
+            %a{:href => "/tweets/#{tweet.id}"}= tweet.title
   =render "footer"          
                     

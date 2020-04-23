@@ -7,6 +7,7 @@ class User < ApplicationRecord
          validates :name, presence: true #追記
   
          mount_uploader :image, ImageUploader
+
   
   # validates :profile, length: { maximum: 200 } #追記
   has_many :comments

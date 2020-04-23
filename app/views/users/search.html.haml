@@ -1,9 +1,9 @@
 .wrapper
   = render "header"
   .gbl_main
-    .gbl_title
-      .gbl_title_container
-        .title_container 
+    .gbl_main_title
+      .gbl_main_title_container
+        .gbl_main_title_container_titles
           %h1.tit.icon_font
             %span.ico
             %i.fab.fa-instagram
@@ -29,5 +29,5 @@
               =user.sex
             %td 
               = user.created_at.strftime("%Y-%m-%d %H:%M")
-  = paginate(@user) 
+  = paginate(@user)
   =render "footer"

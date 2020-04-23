@@ -2,13 +2,13 @@
   = render "header"
   -# .tweetshowhed
   -#   =current_user.name
-  .tweetshows
-    .tweetshow
-      .tweetuser
+  .tweetshow
+    .tweetshow_shows
+      .tweetshow_shows_user
         = link_to asset_url("/users/#{@tweet.user_id}") do
           =@tweet.user.name
         - if user_signed_in?&& current_user.id == @tweet.user_id
-          .editshow
+          .tweetshow_shows_user_edit
             %span
               %ul
                 %li
@@ -18,7 +18,7 @@
                   = link_to tweet_path, method: :delete do
                     %i.fas.fa-trash-alt
         - else
-          .editshow
+          .tweetshow_shows_user_edit
             %span
               %ul
                 %li
@@ -42,7 +42,7 @@
         = @tweet.tall 
         cm
       .tweettemp
-        気温:
+        目安気温:
         =@tweet.temp
         ℃  
       .tweettypestyle

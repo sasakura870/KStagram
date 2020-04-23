@@ -1,13 +1,17 @@
 =render "header"
 .gbl_main
-  .gbl_title
-    .gbl_title_container
-      .title_container 
+  .gbl_main_title
+    .gbl_main_title_container
+      .gbl_main_title_container_titles
         %h1.tit.icon_font
           %span.ico
           %i.fab.fa-instagram
           %i.stst フォロー中
-- @user.followings.each do |user|
-  %table
-    %tr.ssssss
-      %td= link_to user.name, user_path(user)
+.followtop
+.followmain
+  - @user.followings.each do |user|
+    %table
+      %tr.ssssss
+        %td= link_to user.name, user_path(user)
+.followdown
+= render 'footer'

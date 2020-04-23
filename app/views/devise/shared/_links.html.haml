@@ -1,8 +1,8 @@
 - if controller_name != 'sessions'
-  = link_to "ログインへ", new_session_path(resource_name), class: "new_session"
+  = link_to "ログインページ", new_session_path(resource_name), class: "new_session"
   %br/
 - if devise_mapping.registerable? && controller_name != 'registrations'
-  = link_to "新規登録へ", new_registration_path(resource_name),class: "new_registration"
+  = link_to "新規登録ページ", new_registration_path(resource_name),class: "new_registration"
   %br/
 -# - if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations'
 -#   = link_to "パスワードを忘れた場合", new_password_path(resource_name)

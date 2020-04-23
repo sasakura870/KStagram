@@ -1,58 +1,55 @@
-.aboutmains{
+.about{
   flex: 1 1;
-}
-.nametoha{
-  margin: 0 auto;
-    padding: 3.2rem;
-}
-.nametoto{
-  margin: 0 auto;
-  padding: 3.2rem;
-}
-.nametitle{
-  font-size: 60px;
-  color: #45494Be7;
-  font-style: oblique;
-  text-align: center;
-  margin-bottom: 2rem;
-  font-family: 'Homemade Apple', cursive;
-}
-.aboutshousaida{
-  font-size: 2rem;
-    max-width: 1200px;
-    text-align: center;
-    margin: 0 auto 1em;
 
-}
-.aboutshousaidayo{
-  font-size: 1.5rem;
-  max-width: 1200px;
-  text-align: center;
-  margin: 0 auto 5em;
-  
-}
-.hedabout{
-  h2{
-    text-align: center;
-    margin: 10px;
-  }
-}
-.aboutshousaimenu{
-  border: 3px solid #45494Be7;
-    margin: 0 auto 1em;
-    width: 80%;
-}
-.aboutmenuran{
-display: flex;
-    justify-content: space-between;
+  &_name{
     margin: 0 auto;
-    padding: 1em;
-}
-.aboutmenuran-left{
-  flex: 1 1;
-}
-.aboutmenuran-right{
-  flex: 2 1;
-    display: flex;
-    align-items: center;
+    padding: 3.2rem;
+    
+  
+    .nametitle{
+      font-size: 60px;
+      color: #45494Be7;
+      font-style: oblique;
+      text-align: center;
+      margin-bottom: 4rem;
+      font-family: 'Homemade Apple', cursive;
+     
+    }
+    &_shousai{
+      font-size: 2rem;
+        max-width: 1200px;
+        text-align: center;
+        margin: 0 auto 1em;
+        display: none;
+    }
+    &_shousai1{
+      font-size: 1.5rem;
+      max-width: 1200px;
+      text-align: center;
+      margin: 0 auto 5em;  
+      display: none;
+    }
+
+      .aboutmenu{
+        border: 3px solid #45494Be7;
+        margin: 0 auto 1em;
+        width: 80%;
+
+        &_all{
+          display: flex;
+          justify-content: space-between;
+          margin: 0 auto;
+          padding: 1em;
+      
+          &-left{
+            flex: 1 1;
+          }
+          &-right{
+            flex: 1.5 1;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+  }
 }
