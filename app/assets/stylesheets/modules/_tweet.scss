@@ -25,6 +25,7 @@
     margin: 0 auto;
     justify-content: space-between;
     padding: 10px 0;
+    position: relative;
 
       &_left{
       height: calc(100% - 60px);
@@ -123,6 +124,7 @@
           // height: 100vh; 
           overflow: scroll;
           width: 100%;
+          margin-bottom: 10px;
        
     .content{
       margin-left: 25px;

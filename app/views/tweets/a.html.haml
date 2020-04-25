@@ -1,3 +1,14 @@
-- if @current_user.id == @user.id
-  = link_to("編集", "/tweets/#{@tweet.id}/edit")
-  = link_to("削除", "/posts/#{@tweet.id}/destroy", {method: "tweet"})
+\\- if @current_user.id == @user.id
+\\= link_to("編集", "/tweets/\\#{@tweet.id}/edit")
+\\= link_to("削除", "/posts/\\#{@tweet.id}/destroy", {method: "tweet"})
+\%ul.slides
+\%li.slide.active
+\%img{:src =&gt; "https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/jquery/advanced/spring.jpg"}/
+\%li.slide
+\%img{:src =&gt; "https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/jquery/advanced/rainy.jpg"}/
+\%li.slide
+\%img{:src =&gt; "https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/jquery/advanced/autumn.jpg"}/
+\%li.slide
+\%img{:src =&gt; "https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/jquery/advanced/winter.jpg"}/
+%li
+  %a#about.menu_item.active{:href => "#"} Rails

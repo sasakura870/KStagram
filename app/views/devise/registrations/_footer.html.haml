@@ -10,4 +10,7 @@
       %li.p-footer_link_list
         = link_to privacy_tweets_path do
           プライバシーポリシー
+      %li.p-footer_link_list
+        = link_to destroy_user_session_path, method: :delete do
+          ログアウト
   .footersite Copyright © KStagram 2020
