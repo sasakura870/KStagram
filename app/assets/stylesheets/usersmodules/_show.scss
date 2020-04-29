@@ -3,8 +3,7 @@
     width: 100%;
     position: relative;
     background-color: rgba(var(--b3f, 250, 250, 250), 1);
-border-bottom: 1px #ddd solid;
-
+    border-bottom: 1px #ddd solid;
 
   }
 .useriineiine{
@@ -46,14 +45,14 @@ border-bottom: 1px #ddd solid;
       position: relative;
       a{
         display: block;
-    padding: 8px 0 8px 0;
-    text-align: center;
-    text-decoration: none;
-    color: #888;
-    // font-weight: bold;
-    border: 1px #ddd solid;
-    border-radius: 2px;
-    background: linear-gradient(to bottom, #fff 0%, #f6f6f6 100%);
+        padding: 8px 0 8px 0;
+        text-align: center;
+        text-decoration: none;
+        color: #888;
+        // font-weight: bold;
+        border: 1px #ddd solid;
+        border-radius: 2px;
+        background: linear-gradient(to bottom, #fff 0%, #f6f6f6 100%);
       }
     }
 }
@@ -158,6 +157,12 @@ margin-left: 30px;
 .proffff{
   height: 100px;
   margin-top: 20px;
+}
+.postTitle{
+  margin-top: 150px;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-bottom: 150px;
 }
 .aaaaaaa{
   margin-top: 150px;

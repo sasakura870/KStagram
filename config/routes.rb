@@ -19,6 +19,9 @@ Rails.application.routes.draw do
     collection do
       get 'kiyaku'
     end
+    collection do
+      get 'privacy'
+    end
   end
   resources :relationships,       only: [:create, :destroy]
   resources :tweets do

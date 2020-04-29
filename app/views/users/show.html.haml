@@ -54,6 +54,25 @@
                 %p.proffff
                   =@user.profile
                 %br
+  
+  .aaaaaaa
+    投稿一覧
+    %h3.llllls 
+    %table
+      %tr.lsal
+        %th.ssala タイトル
+        %th.ssala 気温(℃)
+        %th.ssala 日付
+      - @tweets.each do |tweet|
+        %tr.kaaa
+          %td.ssala
+            = link_to tweet.title, tweet_path(tweet.id), class: "content__right__top--title"
+          %td.ssala
+            = link_to tweet.temp
+          %td.ssala
+            = link_to tweet.updated_at.strftime("%Y-%m-%d %H:%M")
+          
+  
   .aaaaaaa          
     %h3.llllls いいねしている投稿
     %table

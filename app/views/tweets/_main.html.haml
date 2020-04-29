@@ -1,36 +1,30 @@
 .mainsmainss
 .main_main
   .main_main_left
-    .main_main_left_tops 
-      %h2.main_main_left_tops_time 
-        現在の時刻
-      .lefttop
-        =Time.current.strftime("%Y-%m-%d %H:%M")
+    -# .main_main_left_tops 
+    -#   %h2.main_main_left_tops_time 
+    -#     現在の時刻
+    -#   .lefttop
+    -#     =Time.current.strftime("%Y-%m-%d %H:%M")
     .leftcontents
       .leftcontents_top
         %h2.leftcontents_top_rankname 
           %li.fas.fa-street-view ランキング
         .user_rank 
-        -# - @all_ranks.each do |tweet|
-        -#   =tweet.user.name
-          .user_rank_ranks 1
-          .profranks 
-            ああ
-          .profuserrank
-            = current_user.name
-        .user_rank 
-          .profranks aa
-          .profuserrank
-            f
-
-        -# - @all_ranks.each.with_index(1) do |tweet, i|
-        -#   第
-        -#   = i
-        -#   位
-        -#   = tweet.age
-        -# - if @all_ranks.present?
-        -# - @all_ranks.each do |tweet|
-        -#   =tweet.id
+          - @all_ranks.length >= 0
+          - @all_ranks.each.with_index(1) do |tweet, i|
+            .user_rank_ranks
+              第
+              = i
+              位
+            .user_rank_show
+              .user_rank_show_image
+                %p.user_rank_show_image_names
+                  =image_tag(tweet.user.image_url)
+              .user_rank_show_name
+                %a{:href => "/users/#{tweet.user.id}"}= tweet.user.name
+                
+          
         
         -# %ul.p-rankinglist a
        
@@ -38,6 +32,7 @@
       .leftbottom_down 
         %h2.tagname 
           %li.fas.fa-tags オススメタグ
+          
 
   .main
     .main_index

@@ -8,64 +8,53 @@
             %span.ico
             %i.fas.fa-users-cog
             アカウント編集
-  .useriine
-    .useriineiines
-      .userprofss
-        .userprofiles
-          -# .user_subs
-          -#   .usersubimages
-          -#     %p.imageuserss
-          -#       = image_tag(@user.image_url)
-            -# = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
-            -#   = render "devise/shared/error_messages", resource: resource
-            -#   .field
-            -#     = f.file_field :image
-          .user_mainss
-            .intros
-              %h2.sksksk
+  .useredits
+    .useredits-line
+      .useredits-line_prof
+        .useredits-line_prof_main
+          .useredits-line_prof_main_user
+            .useredits-line_prof_main_user_into
+              %h2.useredits-line_prof_main_user_into_acount
                 アカウント編集
                 -# Edit #{resource_name.to_s.humanize}
               = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
                 = render "devise/shared/error_messages", resource: resource
-                .field
+                .editusername
                   = f.label :ユーザ名
                   %br/
                   = f.text_field :name, autofocus: true
-                .field
+                .editusermail
                   = f.label :メールアドレス
                   %br/
                   = f.email_field :email, autofocus: true, autocomplete: "email"
                 - if devise_mapping.confirmable? && resource.pending_reconfirmation?
                   %div
                     Currently waiting confirmation for: #{resource.unconfirmed_email}
-                .sectionimagess
-                  .subsubsubs
-                    .subsubimageboxs
+                .edituserform
+                  .edituserform_sub
+                    .edituserform_sub_box
                       %span.icoicos
                       %span.icoimages
                         %i.fas.fa-portrait
-                    .mainmainimages
-                      .mainajaxmainss
-                      %p.mainaakjss
+                    .edituserform_sub_image
+                      .edituserform_sub_image_box
+                      %p.edituserform_sub_image_box_pic
                         = f.file_field :image, class: "image_form"
-                        %span.textextxs
+                        %span.texpic
                           写真アップロード
-                  -# .fufrom
-                  -#   .field
-                  -#     = f.select :froms,['北海道','青森県','岩手県','秋田県','宮城県','山形県','福島県','茨城県','栃木県','群馬県','千葉県','埼玉県','東京都','神奈川県','山梨県','新潟県','富山県','長野県','石川県','福井県','静岡県','岐阜県','愛知県','三重県','滋賀県','京都府','大阪府','奈良県','和歌山県','兵庫県','鳥取県','岡山県','広島県','島根県','山口県','徳島県','香川県','愛媛県','高知県','福岡県','佐賀県','大分県','長崎県','熊本県','宮崎県','鹿児島県','沖縄県']
-                  .fffssss
-                    .field
+                  .edituserform_topic
+                    .edituserform_topic_tall
                       = f.select :tall,['50cm','60cm','70cm','80cm','90cm','100cm','110cm','120cm','121cm','122cm','123cm','124cm','125cm','126cm','127cm','128cm','129cm','130cm','131cm','132cm','133cm','134cm','135cm','136cm','137cm','138cm','139cm','140cm','141cm','142cm','143cm','144cm','145cm','146cm','147cm','148cm','149cm','150cm','151cm','152cm','153cm','154cm','155cm','156cm','157cm','158cm','159cm','160cm','161cm','162cm','163cm','164cm','165cm','166cm','167cm','168cm','169cm','170cm','171cm','172cm','173cm','174cm','175cm','176cm','177cm','178cm','179cm','180cm','181cm','182cm','183cm','184cm','185cm','186cm','187cm','188cm','189cm','190cm','191cm','192cm','193cm','194cm','195cm','196cm','197cm','198cm','199cm','200cm','210cm','220cm','230cm','240cm','250cm','260cm','270cm']
-                    .field
+                    .edituserform_topic_sex
                       = f.select :sex, ['MEN', 'WOMEN']
-                    .field
+                    .edituserform_topic_age
                       = f.text_field :age, placeholder: "年齢(歳)"
-                  .fieldss
+                  .edituserform_profile
                     = f.label :紹介文
                     %br/
                     = f.text_area :profile, autofocus: true
-                  .fielsssa
-                    .field
+                  .edituserform_password
+                    .edituserform_password_pass
                       = f.label :パスワード
                       -# %i (leave blank if you don't want to change it)
                       %br/
@@ -75,17 +64,17 @@
                       -#   %em
                       -#     = @minimum_password_length
                       -#     文字以上
-                    .field
+                    .edituserform_password_conf
                       = f.label :パスワード確認
                       %br/
                       = f.password_field :password_confirmation, autocomplete: "new-password"
-                  .fieldasaf
+                  .edituserform_passcurent
                     = f.label :現在のパスワード
                     -# %i (we need your current password to confirm your changes)
                     %br/
                     = f.password_field :current_password, autocomplete: "current-password"
-                  .lslslsl  
-                    .actionss
+                  .edituserform_submit  
+                    .edituserform_submit_sub
                       = f.submit "更新", { :class => 'submit-btnaa' }
                   -# %h3 アカウント削除
                 -# %p

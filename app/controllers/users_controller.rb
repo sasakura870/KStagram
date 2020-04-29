@@ -7,6 +7,7 @@ class UsersController < ApplicationController
   end
   def show
     @user = User.find(params[:id])
+    @tweets=@user.tweets
   end
   def edit
     @user = User.find(params[:id])
@@ -17,8 +18,9 @@ class UsersController < ApplicationController
   end
   def search
     @user = User.search(params[:keyword]).order(created_at: :desc).page(params[:page]).per(20)
-    
   end
+  
+  
   def following
     @user  = User.find(params[:id])
     @users = @user.followings

@@ -1,0 +1,12 @@
+.aaaaaaa          
+  %h3.llllls いいねしている投稿
+  %table
+    %tr.lsal
+      %th.ssala ユーザ名
+      %th.ssala タイトル
+    - @users.liked_tweets.each do |tweet|
+      %tr.kaaa
+        %td.ssala
+          %a{:href => "/users/#{tweet.user.id}"}= tweet.user.name
+        %td.ssala
+          %a{:href => "/tweets/#{tweet.id}"}= tweet.title

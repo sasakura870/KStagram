@@ -1,20 +1,192 @@
-.useriineiines{
+.useredits{
+  width: 100%;
+  position: relative;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  border-bottom: 1px #ddd solid;
+
+  &-line{
   padding: 18px 0 30px 0;
   background: #fff;
-    min-height: 210px;
-    background-color: rgba(var(--b3f, 250, 250, 250), 1);
-    position: relative;
-}
-.userprofss{
-  width: 900px;
-    margin: 0 auto 0 auto;
-    position: relative;
-    z-index: 50;
-}
-.userprofiles{
-  margin: 22px 0 0 0;
-  border: 1px #aaa dashed;
-  background-color: white;
+  min-height: 210px;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  position: relative;
+
+    &_prof{
+      width: 900px;
+      margin: 0 auto 0 auto;
+      position: relative;
+      z-index: 50;
+   
+        &_main{
+        margin: 22px 0 0 0;
+        border: 1px #aaa dashed;
+        background-color: white;
+          &_user{
+            width: 750px;
+            margin: 0 auto;
+            // float: right;
+            padding: 20px 0 0 20px;
+            &_into{
+              display: block;
+              margin: 0 0 0 0;
+              padding: 0 0 0 0;
+              #edit_user{
+                text-align: center;
+                .editusername{
+
+                }
+                .editusermail{
+
+                }
+                .edituserform{
+                  margin-top: 20px;
+                  &_sub{
+                    margin-bottom: 20px;
+                    display: flex;
+                    &_box{
+                      position: relative;
+                      border: 1px #aaa dashed;
+                      background: #fff;
+                      width: 276px;
+                      height: 368px;
+                      float: left;
+                      margin: 0 auto;
+                      .icoicos{
+                        margin-top: 158px;
+                        display: block;
+                      }
+                      .icoimages{
+                        margin: 12px 0 0 0;
+                      text-align: center;
+                      font-size: 16px;
+                      font-weight: bold;
+                      color: #ccc;
+                      display: block;
+                      }
+                      .fas.fa-portrait{
+                       margin: 0 auto;
+                       font-size: 70px;
+                      }
+                    }
+                    &_image{
+                      padding: 154px 0 0 0;
+                        width: 276px;
+                        height: 368px;
+                        position: relative;
+                        float: right;
+                      &_box{
+                        display: none;
+                          position: absolute;
+                          left: 0;
+                          top: 5px;
+                          font-size: 13px;
+                          color: #FF3B30;
+                        &_pic{
+                          position: relative;
+                          height: 36px;
+                          width: 147px;
+                          background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+                          overflow: hidden;
+                          border: 2px #ddd solid;
+                          border-radius: 4px;
+                          color: #fff;
+                          font-size: 12px;
+                          text-align: center;
+                          cursor: pointer;
+                          .image_form{
+                            font-size: 13px;
+                            padding: 8px 8px 8px 8px;
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            z-index: 2;
+                            font-size: 100px;
+                            opacity: 0;
+                            cursor: pointer;  
+                          }
+                          .texpic{
+                            position: absolute;
+                            bottom: -7px;
+                            left: 0;
+                            width: 147px;
+                            height: 32px;
+                            font-weight: bold;
+                          }
+                          
+                        }
+                        &_pic:hover{
+                          background: #D7EEFF;
+                        }
+                      }
+                    }
+                  }
+                  &_topic{
+                    display: flex;
+                    // margin-top: 300px;
+                    margin-bottom: 20px;
+                    margin-left: 30px;
+                    &_tall{
+                      margin-left: 55px;
+                      margin-bottom: 20px;
+                    }
+                    &_sex{
+                      margin-left: 55px;
+                      margin-bottom: 20px;
+                    }
+                    &_age{
+                      margin-left: 55px;
+                      margin-bottom: 20px;
+                    }
+                    
+                  }
+                  &_profile{
+                    width: 100%;
+                    label{
+                      font-size: 25px;
+                    }
+                    #user_profile{
+                      width: 80%;
+                      height: 100px;
+                    }
+                  }
+                  &_password{
+                    margin-top: 20px;
+                    &_pass{
+                      #user_password{
+                        margin-bottom: 30px;
+                      }
+                    }
+                    &_conf{
+                      #user_password_confirmation{
+                        margin-bottom: 30px;
+                      }
+                    }
+                  }
+                  &_passcurent{
+                    margin-top: 20px;
+                    #user_current_password{
+                      margin-bottom: 30px;
+                    }
+                  }
+                  &_submit{
+                    margin-top: 20px;
+                    &_sub{
+                      margin-bottom: 20px;
+                    }
+                  }
+                }
+              }
+              &_acount{
+                font-size: 40px;
+                text-align: center;
+              }
+           
+           
+            }
+          }  
+      }
+    }
+  }
 }
 .user_subs{
   width: 200px;
@@ -38,120 +210,12 @@
 #user_image{
   margin-top: 120px;
 }
-.user_mainss{
-  width: 750px;
-  margin: 0 auto;
-  // float: right;
-  padding: 20px 0 0 20px;
-}
-.intros{
-  display: block;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}
-.sksksk{
-  font-size: 40px;
-  text-align: center;
-  // margin-right: 160px;
-}
-#edit_user{
-text-align: center;
-}
-#user_name{
-  // height: 50px;
-  // margin-bottom: 20px;
-  justify-content: center;
-  // margin-bottom: 30px;
-}
-#user_email{
-  
-  // height: 50px;
-  // margin-bottom: 30px;
-}
-.sectionimagess{
-  
-  margin-top: 20px;
-  .subsubsubs{
-   
-  // height: 310px;
-  margin-bottom: 20px;
-  display: flex;
-  }
-  .subsubimageboxs{
-    position: relative;
-  border: 1px #aaa dashed;
-  background: #fff;
-  width: 276px;
-    height: 368px;
-    float: left;
-    margin: 0 auto;
-  .icoicos{
-    margin-top: 158px;
-    display: block;
-  }
-  .icoimages{
-    margin: 12px 0 0 0;
-  text-align: center;
-  font-size: 16px;
-  font-weight: bold;
-  color: #ccc;
-  display: block;
-  }
-  .fas.fa-portrait{
-   margin: 0 auto;
-   font-size: 70px;
-  }
- }
- .mainmainimages{
-  padding: 154px 0 0 0;
-  width: 276px;
-  height: 368px;
-  position: relative;
-  float: right;
- }
-  .mainajaxmainss{
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 5px;
-    font-size: 13px;
-    color: #FF3B30;
-  }
-  .mainaakjss{
-    position: relative;
-    height: 36px;
-    width: 147px;
-    background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
-    overflow: hidden;
-    border: 2px #ddd solid;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 12px;
-    text-align: center;
-    cursor: pointer;
-  }
-  .mainaakjss:hover{
-    background: #D7EEFF;
-  }
-.image_form{
-  font-size: 13px;
-padding: 8px 8px 8px 8px;
-position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
-    font-size: 100px;
-    opacity: 0;
-    cursor: pointer;  
-}
-.textextxs{
-  position: absolute;
-    bottom: -7px;
-    left: 0;
-    width: 147px;
-    height: 32px;
-    font-weight: bold;
-}
+
+
+
+
+ 
+ 
 
 
 .fufrom{
@@ -195,17 +259,12 @@ position: absolute;
   background-repeat: no-repeat;    
   }
 }
-.fffssss{
-  display: flex;
-  // margin-top: 300px;
-  margin-bottom: 20px;
-  margin-left: 30px;
-  // text-align: center;
-  .field{
-  margin-left: 55px;
-  margin-bottom: 20px;
-  }
-}
+
+  // .field{
+  // margin-left: 55px;
+  // margin-bottom: 20px;
+  // }
+
   select {
 
     /* styling */
@@ -255,36 +314,11 @@ position: absolute;
   background-repeat: no-repeat;
   }
 
-.fieldss{
-  width: 100%;
-  label{
-    font-size: 25px;
-  }
-  #user_profile{
-    width: 80%;
-    height: 100px;
-  }
-}
-.fielsssa{
-  // display: flex;
-  margin-top: 20px;
-  // margin-left: 50px;
-  #user_password{
-    margin-bottom: 30px;
-  }
-  // label{
-  //   // margin-left: 80px;
-  // }
-  // #user_password_confirmation{
-  //   // margin-left: 80px;
-  // }
-}
+
+
 .fieldasaf{
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.actionss{
-  margin-bottom: 20px;
-}
-}
+
