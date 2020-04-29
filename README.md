@@ -81,3 +81,5 @@ Things you may want to cover:
 |------|----|-------|
 |follower_id|integer|null: false, foreign_key: true|
 |following_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :user
