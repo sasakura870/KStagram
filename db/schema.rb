@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_28_120525) do
+ActiveRecord::Schema.define(version: 2020_04_05_080926) do
 
   create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "user_id"
@@ -37,18 +37,6 @@ ActiveRecord::Schema.define(version: 2020_04_28_120525) do
     t.index ["following_id"], name: "index_relationships_on_following_id"
   end
 
-  create_table "tag_tweets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "tags", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "tag_name", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["tag_name"], name: "index_tags_on_tag_name", unique: true
-  end
-
   create_table "tweets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "text", null: false
     t.string "title", null: false
@@ -58,7 +46,6 @@ ActiveRecord::Schema.define(version: 2020_04_28_120525) do
     t.integer "temp", null: false
     t.string "typestyle", null: false
     t.integer "user_id"
-    t.integer "genre_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["text"], name: "index_tweets_on_text", length: 32
@@ -71,7 +58,6 @@ ActiveRecord::Schema.define(version: 2020_04_28_120525) do
     t.string "sex"
     t.integer "age"
     t.integer "tall"
-    t.string "froms"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
