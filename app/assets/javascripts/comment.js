@@ -1,3 +1,4 @@
+$(document).on('turbolinks:load', function() {
 $(function(){
   function buildHTML(comment){
     var html =  `<p>
@@ -31,4 +32,5 @@ $(function(){
       alert('error');
     })
   })
+});
 });

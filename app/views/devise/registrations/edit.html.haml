@@ -1,4 +1,4 @@
-.wrappers
+.wrapper
   =render "header"
   .gbl_main
     .gbl_main_title
@@ -14,8 +14,8 @@
         .useredits-line_prof_main
           .useredits-line_prof_main_user
             .useredits-line_prof_main_user_into
-              %h2.useredits-line_prof_main_user_into_acount
-                アカウント編集
+              -# %h2.useredits-line_prof_main_user_into_acount
+              -#   アカウント編集
                 -# Edit #{resource_name.to_s.humanize}
               = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
                 = render "devise/shared/error_messages", resource: resource

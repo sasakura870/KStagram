@@ -18,7 +18,7 @@
       z-index: 50;
    
         &_main{
-        margin: 22px 0 0 0;
+        margin: 22px 0 30px 0;
         border: 1px #aaa dashed;
         background-color: white;
           &_user{
@@ -33,10 +33,28 @@
               #edit_user{
                 text-align: center;
                 .editusername{
-
+                  max-width: 343px;
+                  margin: 0 auto;
+                  label{
+                    font-size: 30px;
+                    text-align: center;
+                  }
+                  #user_name{
+                    width: 100%;
+                    line-height: 48px;
+                  }
                 }
                 .editusermail{
-
+                  max-width: 343px;
+                  margin: 0 auto;
+                  label{
+                    font-size: 30px;
+                    text-align: center;
+                  }
+                  #user_email{
+                    width: 100%;
+                    line-height: 48px;
+                  }
                 }
                 .edituserform{
                   margin-top: 20px;
@@ -121,21 +139,36 @@
                     }
                   }
                   &_topic{
-                    display: flex;
-                    // margin-top: 300px;
-                    margin-bottom: 20px;
-                    margin-left: 30px;
+                    // display: flex;
+                    max-width: 343px;
+                    margin: 0 auto;
+                    // margin-left: 30px;
                     &_tall{
-                      margin-left: 55px;
-                      margin-bottom: 20px;
+                      width: 100%;
+                      margin-top: 50px;
+                      margin-bottom: 50px;
+                      #user_tall{
+                        width: 100%;
+                    line-height: 48px;
+                      }
                     }
                     &_sex{
-                      margin-left: 55px;
-                      margin-bottom: 20px;
+                      width: 100%;
+                      margin-top: 50px;
+                      margin-bottom: 50px;
+                      #user_sex{
+                        width: 100%;
+                        line-height: 48px;
+                      }
                     }
                     &_age{
-                      margin-left: 55px;
-                      margin-bottom: 20px;
+                      width: 100%;
+                      margin-top: 50px;
+                      margin-bottom: 50px;
+                      #user_age{
+                        width: 100%;
+                        line-height: 48px;
+                      }
                     }
                     
                   }
